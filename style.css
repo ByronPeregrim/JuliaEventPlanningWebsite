@@ -373,14 +373,9 @@
   text-decoration: none;
   color: black;
   }
-
-  #desktop-menu-left,
-  #desktop-menu-right {
-    display: none;
-  }
   
   /* Sticky Header */
-  #sticky-header-box {
+  .sticky-header-box {
   height: 5rem;
   border-bottom: solid;
   border-bottom-width: thin;
@@ -392,18 +387,24 @@
   background-color: white;
   }
   
-  #sticky-header-logo {
+  .sticky-header-logo {
   height: 4rem;
   margin-left: 1rem;
   }
   
-  #sticky-header-mobile-menu-icon {
+  .sticky-header-mobile-menu-icon {
   height: 2.5rem;
   margin-right: 1rem;
   }
   
   /* Homepage Banner */
-  #homepage-banner-box {
+
+  .desktop-menu-left,
+  .desktop-menu-right {
+    display: none;
+  }
+
+  .homepage-banner-box {
   padding-top: 5rem;
   height: 30rem;
   display: flex;
@@ -411,13 +412,13 @@
   align-items: center;
   }
   
-  #homepage-banner-logo {
+  .homepage-banner-logo {
   height: auto;
   width: 10rem;
   margin-top: 1rem;
   }
   
-  #homepage-banner-text {
+  .homepage-banner-text {
   width: 10rem;
   text-align: center;
   font-size: calc(16px * 1.618);
@@ -625,7 +626,7 @@
   /* Responsive Styles */
   @media (min-width: 1000px) {
   /* Homepage Banner */
-  #homepage-banner-logo {
+  .homepage-banner-logo {
   width: 7.5rem;
   }
   
@@ -704,29 +705,29 @@
   }
   
   /* Sticky Header */
-  #sticky-header-box {
+  .sticky-header-box {
   display: none;
   }
   
   /* Homepage Banner */
-  #homepage-banner-box {
+  .homepage-banner-box {
   padding-top: 1rem;
   height: 40rem;
   }
   
-  #homepage-banner-text {
+  .homepage-banner-text {
   font-size: calc(16*1.618px);
   width: auto;
   }
   
   /* Desktop Menu */
-  #desktop-menu-box {
+  .desktop-menu-box {
   display:flex;
   align-items: center;
   }
   
-  #desktop-menu-left,
-  #desktop-menu-right {
+  .desktop-menu-left,
+  .desktop-menu-right {
   height: 5rem;
   width: 25rem;
   display: flex;
@@ -778,4 +779,28 @@
   #corporate-photo-box {
   display: flex;
   }
+}
+
+
+/*ABOUT PAGE */
+
+#non-homepage-banner-box {
+  height: 20rem;
+}
+
+#non-homepage-banner-logo {
+  width: 5rem;
+}
+
+#non-homepage-banner-text {
+  font-size: 16px;
+}
+
+@media (min-width: 1000px) {
+  #non-homepage-banner-logo {
+    width: 10rem;
+  } 
+  #non-homepage-banner-text {
+    font-size: calc(16px*1.618);
+  } 
 }

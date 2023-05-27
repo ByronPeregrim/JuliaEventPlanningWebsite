@@ -16,21 +16,38 @@
     </div>
 
     <div id="homepage-banner-box">
-        <img id="homepage-banner-logo" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
-        <h1 id="homepage-banner-text">Welcome to Julia Rose Event Planning Co.</h1>
+        <div id="desktop-menu-box">
+            <div id="desktop-menu-left">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+            </div>
+            <img id="homepage-banner-logo" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
+            <div id="desktop-menu-right">
+                <a href="gallery.html">Gallery</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <h1 id="homepage-banner-text">Julia Rose Event Planning Co.</h1>
     </div>
 
     <div class="service-box">
         <div class="service-box-left">
             <h2 class="service-header">Weddings</h2>
             <div class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-            <button class="service-button">Weddings Page</button>
+            <button class="service-button" onclick="document.location='weddings.html'">Weddings Page</button>
         </div>
         <div class="service-box-right"></div>
     </div>
 
     <div class="photo-box">
         <div id="wedding-photos-box">
+            <div id="top-left-text">
+                <h2 id="top-left-text-header">Weddings</h2>
+                <div id="top-left-text-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <button id="top-left-text-button" onclick="document.location='weddings.html'">Weddings Page</button>
+            </div>
             <div id="bottom-left-photo-box"></div>
             <div id="top-right-photo-box"></div>
         </div>
@@ -41,17 +58,30 @@
         <div class="service-box-left">
             <h2 class="service-header">Social Events</h2>
             <div class="service-text">Sed blandit libero volutpat sed. Amet commodo nulla facilisi nullam vehicula ipsum a arcu.</div>
-            <button class="service-button">Social Events Page</button>
+            <button class="service-button" onclick="document.location='social-events.html'">Social Events Page</button>
         </div>
         <div class="service-box-right"></div>
     </div>
 
-    <div class="photo-box">
+    <div id="social-events-photo-box" class="photo-box">
         <div id="social-events-photos-box">
             <div id="social-events-photo-top-left"></div>
             <div id="social-events-photo-top-right"></div>
             <div id="social-events-photo-bottom-left"></div>
             <div id="social-events-photo-bottom-right"></div>
+        </div>
+        <div id="social-events-text-box">
+            <h2>Services include:</h2>
+            <ul>
+                <li>Weddings</li>
+                <li>Birthdays</li>
+                <li>Private Parties</li>
+                <li>Business Meetings</li>
+                <li>Anniversaries</li>
+                <li>Bachelorette Parties</li>
+                <li>and many more!</li>
+            </ul>
+            <button class="service-button" onclick="document.location='services.html'">Services Page</button>
         </div>
     </div>
     
@@ -60,7 +90,7 @@
         <div class="service-box-left">
             <h2 class="service-header">Corporate Events</h2>
             <div class="service-text">Cursus sit amet dictum sit amet justo donec enim diam. Amet cursus sit amet dictum sit amet justo.</div>
-            <button class="service-button">Corporate Events Page</button>
+            <button class="service-button" onclick="document.location='corporate-events.html'">Corporate Events Page</button>
         </div>
         <div class="service-box-right"></div>
     </div>
@@ -80,16 +110,21 @@
             <div id="instagram-picture-1"></div>
             <div id="instagram-picture-2"></div>
             <div id="instagram-picture-3"></div>
+            <div class="photo-reel"></div>
+            <div class="photo-reel"></div>
+            <div class="photo-reel"></div>
+            <div class="photo-reel"></div>
+            <div class="photo-reel"></div>
+            <div class="photo-reel"></div>
+            <div class="photo-reel"></div>
+            <div class="photo-reel"></div>
         </div>
     </div>
 
     <div id="footer-box">
         <div id="footer-left-box">
             <div id="contact-text">Visit my Contact page and send me a message!</div>
-            <button id="contact-button">Contact Now!</button>
-            <div id="copyright">
-                COPYRIGHT INFO GOES HERE
-            </div>
+            <button class="contact-button" onclick="document.location='contact.html'">Contact Now!</button>
         </div>
         <div id="footer-right-box">
             <ul id="contact-info-list">
@@ -101,5 +136,8 @@
             </ul>
         </div>
     </div>
+    
+    <div id="copyright">COPYRIGHT GOES HERE</div>
+
 </body>
 </html>

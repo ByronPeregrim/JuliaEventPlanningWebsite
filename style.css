@@ -354,6 +354,7 @@
 * {
     font-size: 16px;
     font-family: Helvetica;
+   
 }
 
 h2 {
@@ -368,6 +369,11 @@ li {
   font-size: 14px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 #sticky-header-box {
     height: 5rem;
     border-bottom: solid;
@@ -375,6 +381,10 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    
 }
 
 #sticky-header-logo {
@@ -388,6 +398,7 @@ li {
 }
 
 #homepage-banner-box {
+    padding-top: 5rem;
     height: 30rem;
     display: flex;
     flex-direction: column;
@@ -409,8 +420,10 @@ li {
 .service-box {
     height: 18rem;
     display: flex;
-    margin: 2rem;
     margin-top: 3rem;
+    border-top: solid;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .service-box-left {
@@ -430,7 +443,12 @@ li {
   justify-content: center;
   width: 100%;
   min-width: 320px;
+  margin-left: 5px;
+  border-top: solid;
+  padding-top: 3rem;
 }
+
+
 
 #wedding-photos-box {
     aspect-ratio: 1;
@@ -438,6 +456,10 @@ li {
     display: grid;
     grid-template-columns: repeat(7, auto);
     grid-template-rows: repeat(7, auto);
+}
+
+#top-left-text {
+ display: none;
 }
 
 #top-right-photo-box {
@@ -456,6 +478,10 @@ li {
     display: grid;
     grid-template-columns: repeat(21, auto);
     grid-template-rows: repeat(21, auto);
+}
+
+#social-events-text-box {
+  display: none;
 }
 
 #social-events-photo-top-left {
@@ -485,14 +511,27 @@ li {
 #corporate-events-photos-box {
   aspect-ratio: 1.25;
   width: 30rem;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: (50, 2%);
 }
 
 .corporate-photo {
-  width: 30%;
   border: solid;
 }
+
+#corporate-photo-left {
+  grid-area: 1 / 1 / 18 / 7;
+}
+
+#corporate-photo-middle {
+  grid-area: 3 / 8 / 20 / 14;
+}
+
+#corporate-photo-right {
+  grid-area: 5 / 15 / 22 / 21;
+}
+
 
 #instagram-box {
   height: 60rem;
@@ -500,7 +539,9 @@ li {
   flex-direction: column;
   align-items: center;
   margin: 1rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  border-top: solid;
+  padding-top: 1rem;
 }
 
 #instagram-picture-box {
@@ -541,7 +582,8 @@ li {
   width: 50%;
 }
 
-#footer-right-box {
+#footer-right-box,
+#footer-left-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -553,8 +595,7 @@ li {
 }
 
 #footer-left-box {
-  display: grid;
-  grid-template-rows: repeat(10, 10%);
+  flex-direction: column;
 }
 
 #copyright {
@@ -562,7 +603,7 @@ li {
   grid-row: 10 / 11;
 }
 
-#contact-button {
+.contact-button {
   grid-row: 6 / 8;
   width: 8rem;
   justify-self: center;
@@ -572,10 +613,122 @@ li {
   font-size: 16px;
   text-align: center;
   grid-row: 2 / 5;
+  width: 9rem;
+  justify-self: center;
+}
+
+#desktop-menu-left,
+#desktop-menu-right {
+  display: none;
 }
 
 @media (min-width: 1000px) {
-  #sticky-header-box {
-    background-color: pink;
+
+  #instagram-box {
+    border: none;
+    height: auto;
   }
+
+  #instagram-picture-1,
+  #instagram-picture-2,
+  #instagram-picture-3 {
+    display: none;
+  }
+
+  #instagram-picture-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .photo-reel {
+    border: solid;
+    width: 10%;
+    aspect-ratio: 1;
+  }
+
+  .service-box {
+    display: none;
+  }
+
+  .service-box-left {
+    padding-top: 5rem;
+  }
+
+  .photo-box {
+    min-width: 1000px;
+    border: none;
+    margin-bottom: 5rem;
+  }
+
+  #top-left-text {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 1 / 6 / 6;
+  }
+
+  #top-left-text-button {
+    justify-self: center;
+    margin-top: 2rem;
+  }
+
+  #top-right-photo-box {
+    border: solid;
+    grid-area: 1 / 7 / 12 / 16;
+}
+
+#bottom-left-photo-box {
+    border: solid;
+    grid-area: 7 / 1 / 16 / 12;
+}
+
+  #wedding-photos-box {
+    grid-template-columns: repeat(15, 3rem);
+    grid-template-rows: repeat(15, 3rem);
+    width: auto;
+  }
+
+  #sticky-header-box {
+    display: none;
+  }
+
+  #homepage-banner-box {
+    padding-top: 1rem;
+    height: 40rem;
+  }
+
+  #homepage-banner-text {
+    font-size: calc(16*1.618px);
+    width: auto;
+  }
+
+  #desktop-menu-box {
+    display:flex;
+    align-items: center;
+  }
+
+  #desktop-menu-left,
+  #desktop-menu-right {
+    height: 5rem;
+    width: 25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #social-events-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+
+  #contact-text {
+    width: auto;
+    margin-bottom: 1rem;
+  }
+
+
 }

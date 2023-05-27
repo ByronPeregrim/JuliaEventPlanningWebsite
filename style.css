@@ -351,403 +351,431 @@
 
 /* End of normalize.css.*/
 
-* {
-    font-size: 16px;
-    font-family: Helvetica;
-   
-}
+/* Global styles */
 
-h2 {
-    font-size: calc(16*1.618px);
-}
-
-h1 {
-    font-size: calc(16*1.618*1.618px);
-}
-
-li {
+  * {
+  font-size: 16px;
+  font-family: Helvetica;
+  }
+  h2 {
+  font-size: calc(16 * 1.618px);
+  }
+  
+  h1 {
+  font-size: calc(16 * 1.618 * 1.618px);
+  }
+  
+  li {
   font-size: 14px;
-}
-
-a {
+  }
+  
+  a {
   text-decoration: none;
   color: black;
-}
+  }
 
-#sticky-header-box {
-    height: 5rem;
-    border-bottom: solid;
-    border-bottom-width: thin;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    
-}
-
-#sticky-header-logo {
-    height: 4rem;
-    margin-left:1rem
-}
-
-#sticky-header-mobile-menu-icon {
-    height: 2.5rem;
-    margin-right: 1rem;
-}
-
-#homepage-banner-box {
-    padding-top: 5rem;
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#homepage-banner-logo {
-    height: auto;
-    width: 7.5rem;
-    margin-top: 1rem;
-}
-
-#homepage-banner-text {
-    width: 10rem;
-    text-align: center;
-    font-size: 16px;
-}
-
-.service-box {
-    height: 18rem;
-    display: flex;
-    margin-top: 3rem;
-    border-top: solid;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.service-box-left {
-    width: 50%;
-}
-
-.service-box-right {
-    width: 50%;
-}
-
-.service-button {
-    margin-top: 1rem;
-}
-
-.photo-box {
+  #desktop-menu-left,
+  #desktop-menu-right {
+    display: none;
+  }
+  
+  /* Sticky Header */
+  #sticky-header-box {
+  height: 5rem;
+  border-bottom: solid;
+  border-bottom-width: thin;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  }
+  
+  #sticky-header-logo {
+  height: 4rem;
+  margin-left: 1rem;
+  }
+  
+  #sticky-header-mobile-menu-icon {
+  height: 2.5rem;
+  margin-right: 1rem;
+  }
+  
+  /* Homepage Banner */
+  #homepage-banner-box {
+  padding-top: 5rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  #homepage-banner-logo {
+  height: auto;
+  width: 10rem;
+  margin-top: 1rem;
+  }
+  
+  #homepage-banner-text {
+  width: 10rem;
+  text-align: center;
+  font-size: calc(16px * 1.618);
+  }
+  
+  /* Service Box */
+  .service-box {
+  height: 18rem;
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  }
+  
+  .service-box-left {
+  width: 50%;
+  }
+  
+  .service-box-right {
+  width: 50%;
+  }
+  
+  .service-button {
+  margin-top: 1rem;
+  }
+  
+  /* Photo Box */
+  .photo-box {
   display: flex;
   justify-content: center;
   width: 100%;
   min-width: 300px;
   margin-left: 5px;
-  border-top: solid;
   padding-top: 3rem;
-}
-
-.photo-reel {
+  }
+  
+  .photo-reel {
   display: none;
-}
-
-
-
-#wedding-photos-box {
-    aspect-ratio: 1;
-    width: 95%;
-    display: grid;
-    grid-template-columns: repeat(7, auto);
-    grid-template-rows: repeat(7, auto);
-}
-
-#top-left-text {
- display: none;
-}
-
-#top-right-photo-box {
-    border: solid;
-    grid-area: 1 / 4 / 6 / 8;
-}
-
-#bottom-left-photo-box {
-    border: solid;
-    grid-area: 4 / 1 / 8 / 6;
-}
-
-#social-events-photos-box {
+  }
+  
+  /* Wedding Photos */
+  #wedding-photos-box {
+  aspect-ratio: 1;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(7, auto);
+  }
+  
+  #top-left-text {
+  display: none;
+  }
+  
+  #top-right-photo-box {
+  border: solid;
+  grid-area: 1 / 4 / 6 / 8;
+  }
+  
+  #bottom-left-photo-box {
+  border: solid;
+  grid-area: 4 / 1 / 8 / 6;
+  }
+  
+  /* Social Events Photos */
+  #social-events-photos-box {
   aspect-ratio: 1;
   width: 95%;
   display: grid;
   grid-template-columns: repeat(21, auto);
   grid-template-rows: repeat(21, auto);
-}
-
-#social-events-text-box {
+  }
+  
+  #social-events-text-box {
   display: none;
-}
-
-#social-events-photo-top-left {
-    border: solid;
-    grid-area: 1 / 1 / 11 / 11;
-}
-
-#social-events-photo-top-right {
-    border: solid;
-    grid-area: 1 / 12 / 11 / 22;
-}
-
-#social-events-photo-bottom-left {
+  }
+  
+  #social-events-photo-top-left {
+  border: solid;
+  grid-area: 1 / 1 / 11 / 11;
+  }
+  
+  #social-events-photo-top-right {
+  border: solid;
+  grid-area: 1 / 12 / 11 / 22;
+  }
+  
+  #social-events-photo-bottom-left {
   border: solid;
   grid-area: 12 / 1 / 22 / 11;
-}
-
-#social-events-photo-bottom-right {
+  }
+  
+  #social-events-photo-bottom-right {
   border: solid;
   grid-area: 12 / 12 / 22 / 22;
-}
-
-#corporate-events-box {
-  height: 18rem;
-}
-
-#corporate-events-photos-box {
-  aspect-ratio: 1.25;
-  width: 95%;
-  display: grid;
-  grid-template-columns: repeat(20, 5%);
-  grid-template-rows: (50, 2%);
-}
-
-.corporate-photo {
-  border: solid;
-}
-
-#corporate-photo-left {
-  grid-area: 1 / 1 / 18 / 7;
-}
-
-#corporate-photo-middle {
-  grid-area: 3 / 8 / 20 / 14;
-}
-
-#corporate-photo-right {
-  grid-area: 5 / 15 / 22 / 21;
-}
-
-
-#instagram-box {
+  }
+  
+  /* Corporate Events */
+  #corporate-events-photos-box {
+    aspect-ratio: 1.25;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: (50, 2%);
+  }
+  
+  .corporate-photo {
+    border: solid;
+  }
+  
+  #corporate-photo-left {
+    grid-area: 5 / 1 / 22 / 7;
+  }
+  
+  #corporate-photo-middle {
+    grid-area: 3 / 8 / 20 / 14;
+  }
+  
+  #corporate-photo-right {
+    grid-area: 1 / 15 / 18 / 21;
+  }
+  
+  #desktop-corporate-text {
+  display: none;
+  }
+  
+  /* Instagram Box */
+  #instagram-box {
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem;
   margin-top: 3rem;
-  border-top: solid;
   padding-top: 1rem;
   text-align: center;
-}
-
-#instagram-picture-box {
+  }
+  
+  #instagram-picture-box {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#instagram-picture-1 {
+  }
+  
+  #instagram-picture-1 {
   border: solid;
   aspect-ratio: 1;
   width: 80%;
   margin-top: 5rem;
-}
-
-#instagram-picture-2 {
+  }
+  
+  #instagram-picture-2 {
   border: solid;
-  aspect-ratio: .75;
+  aspect-ratio: 0.75;
   width: 50%;
   margin-top: 5rem;
-}
-
-#instagram-picture-3 {
+  }
+  
+  #instagram-picture-3 {
   border: solid;
   aspect-ratio: 2;
   width: 90%;
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
-
-#footer-box {
+  }
+  
+  /* Footer */
+  #footer-box {
   height: 10rem;
   display: flex;
   border-top: solid;
-}
-
-#footer-left-box,
-#footer-right-box {
+  }
+  
+  #footer-left-box,
+  #footer-right-box {
   height: 100%;
   width: 50%;
-}
-
-#footer-right-box,
-#footer-left-box {
+  }
+  
+  #footer-right-box,
+  #footer-left-box {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#contact-info-list {
+  }
+  
+  #contact-info-list {
   list-style: none;
   margin-left: -20%;
-}
-
-#footer-left-box {
-  flex-direction: column;
-}
-
-#copyright {
-  font-size: 12px;
-  grid-row: 10 / 11;
-}
-
-.contact-button {
-  grid-row: 6 / 8;
-  width: 8rem;
-  justify-self: center;
-}
-
-#contact-text {
-  font-size: 16px;
-  text-align: center;
-  grid-row: 2 / 5;
-  width: 9rem;
-  justify-self: center;
-}
-
-#desktop-menu-left,
-#desktop-menu-right {
-  display: none;
-}
-
-@media (min-width: 1000px) {
-
-  #instagram-box {
-    border: none;
-    height: auto;
-    margin-bottom: 5rem;
-  }
-
-  #instagram-picture-1,
-  #instagram-picture-2,
-  #instagram-picture-3 {
-    display: none;
-  }
-
-  #instagram-picture-box {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 2rem;
-    justify-content: space-evenly;
-  }
-
-  .photo-reel {
-    display: block;
-    border: solid;
-    width: 10%;
-    aspect-ratio: 1;
-  }
-
-
-  .service-box {
-    display: none;
-  }
-
-  .service-box-left {
-    padding-top: 5rem;
-  }
-
-  .photo-box {
-    min-width: 1000px;
-    border: none;
-    margin-bottom: 5rem;
-  }
-
-  #top-left-text {
-    display: flex;
-    flex-direction: column;
-    grid-area: 1 / 1 / 6 / 6;
-  }
-
-  #top-left-text-button {
-    justify-self: center;
-    margin-top: 2rem;
-  }
-
-  #top-right-photo-box {
-    border: solid;
-    grid-area: 1 / 7 / 12 / 16;
-}
-
-#bottom-left-photo-box {
-    border: solid;
-    grid-area: 7 / 1 / 16 / 12;
-}
-
-  #wedding-photos-box {
-    grid-template-columns: repeat(15, 3rem);
-    grid-template-rows: repeat(15, 3rem);
-    width: auto;
-  }
-
-  #sticky-header-box {
-    display: none;
-  }
-
-  #homepage-banner-box {
-    padding-top: 1rem;
-    height: 40rem;
-  }
-
-  #homepage-banner-text {
-    font-size: calc(16*1.618px);
-    width: auto;
-  }
-
-  #desktop-menu-box {
-    display:flex;
-    align-items: center;
-  }
-
-  #desktop-menu-left,
-  #desktop-menu-right {
-    height: 5rem;
-    width: 25rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  #social-events-text-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 2rem;
   }
 
   #contact-text {
-    width: auto;
-    margin-bottom: 1rem;
+    text-align: center;
+    margin-right: .5rem;
   }
 
+  #copyright {
+    font-size: 12px;
+  }
+  
+  #footer-left-box {
+  flex-direction: column;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 1000px) {
+  /* Homepage Banner */
+  #homepage-banner-logo {
+  width: 7.5rem;
+  }
+  
+  /* Instagram Box */
+  #instagram-box {
+  border: none;
+  height: auto;
+  margin-bottom: 5rem;
+  margin-top: 7rem;
+  }
+  
+  #instagram-picture-1,
+  #instagram-picture-2,
+  #instagram-picture-3 {
+  display: none;
+  }
+  
+  #instagram-picture-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 3rem;
+  justify-content: space-evenly;
+  }
+  
+  /* Photo Reel */
+  .photo-reel {
+  display: block;
+  border: solid;
+  width: 10%;
+  aspect-ratio: 1;
+  }
+  
+  /* Service Box */
+  .service-box {
+  display: none;
+  }
+  
+  .service-box-left {
+  padding-top: 5rem;
+  }
+  
+  /* Photo Box */
+  .photo-box {
+  min-width: 1000px;
+  border: none;
+  margin-bottom: 5rem;
+  }
+  
+  /* Wedding Photos */
+  #top-left-text {
+  display: flex;
+  flex-direction: column;
+  grid-area: 1 / 1 / 6 / 6;
+  }
+  
+  #top-left-text-button {
+  justify-self: center;
+  margin-top: 2rem;
+  }
+  
+  #top-right-photo-box {
+  border: solid;
+  grid-area: 1 / 7 / 12 / 16;
+  }
+  
+  #bottom-left-photo-box {
+  border: solid;
+  grid-area: 7 / 1 / 16 / 12;
+  }
+  
+  #wedding-photos-box {
+  grid-template-columns: repeat(15, 3rem);
+  grid-template-rows: repeat(15, 3rem);
+  width: auto;
+  }
+  
+  /* Sticky Header */
+  #sticky-header-box {
+  display: none;
+  }
+  
+  /* Homepage Banner */
+  #homepage-banner-box {
+  padding-top: 1rem;
+  height: 40rem;
+  }
+  
+  #homepage-banner-text {
+  font-size: calc(16*1.618px);
+  width: auto;
+  }
+  
+  /* Desktop Menu */
+  #desktop-menu-box {
+  display:flex;
+  align-items: center;
+  }
+  
+  #desktop-menu-left,
+  #desktop-menu-right {
+  height: 5rem;
+  width: 25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+  
+  /* Social Events */
+  #social-events-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  text-align: left;
+  }
+  
+  #contact-text {
+  width: auto;
+  margin-bottom: 1rem;
+  }
+  
   #social-events-photos-box {
-    width: 30rem;
+  width: 30rem;
   }
-
+  
+  /* Corporate Events */
   #corporate-events-photos-box {
-    width: 40rem;
+  width: 30rem;
   }
-
+  
+  #social-events-text {
+  text-align: left;
+  }
+  
+  /* Service Button */
+  .service-button {
+  width: 50%;
+  align-self: center;
+  }
+  
+  #desktop-corporate-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  width: 30rem;
+  }
+  
+  #corporate-photo-box {
+  display: flex;
+  }
 }

@@ -615,6 +615,12 @@
     margin-right: .5rem;
   }
 
+  @media (max-width: 400px) {
+    li {
+      font-size: 11px;
+    }
+  }
+
   #copyright {
     font-size: 12px;
   }
@@ -782,7 +788,7 @@
 }
 
 
-/*ABOUT PAGE */
+/*Non-Homepage Header*/
 
 #non-homepage-banner-box {
   height: 20rem;
@@ -798,9 +804,95 @@
 
 @media (min-width: 1000px) {
   #non-homepage-banner-logo {
-    width: 10rem;
+    width: 7.5rem;
   } 
   #non-homepage-banner-text {
     font-size: calc(16px*1.618);
   } 
+}
+
+/* About Page */
+
+#about-content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#about-content {
+  display: flex;
+  flex-direction: column;
+  margin: .5rem;
+  align-items: center;
+  max-width: 750px;
+}
+
+#about-header {
+  align-self: flex-start;
+}
+
+#about-text-1,
+#about-text-2 {
+  text-align: center;
+}
+
+#about-picture-box {
+  width: 80%;
+  aspect-ratio: 1;
+  border: solid;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 33.3333%);
+}
+
+#about-pic-1 {
+  border: dotted;
+  grid-area: 1 / 1 / 5 / 4;
+}
+
+#about-pic-2 {
+  border: dotted;
+  grid-area: 1 / 4 / 2 / 5;
+}
+#about-pic-3 {
+  border: dotted;
+  grid-area: 2 / 4 / 3 / 5;
+}
+#about-pic-4 {
+  border: dotted;
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+@media (min-width: 1000px) {
+  #about-content {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(9, 11.1111%);
+    grid-template-rows: repeat(5, 20%);
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  #about-picture-box {
+    grid-area: 1 / 6 / 5 / 9;
+    width: 120%;
+  }
+
+  #about-header {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-top: 3rem;
+  }
+
+  #about-text-1 {
+    grid-area: 2 / 1 / 3 / 5;
+    text-align: left;
+  }
+
+  #about-text-2 {
+    grid-area: 3 / 1 / 4 / 5;
+    text-align: left;
+    margin-top: 1.5rem;
+  }
+
 }

@@ -423,6 +423,52 @@
   text-align: center;
   font-size: calc(16px * 1.618);
   }
+
+  /* Dropdown Menu */
+
+  .dropdown {
+    position:relative;
+    display: inline-block;
+    z-index: 10;
+  }
+
+  .dropdown_hover {
+    display: inline-block;
+    border: none;
+    background: white;
+  }
+
+  .dropdown_hover:hover {
+    background: white;
+  }
+
+  .dropdown_menu {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background: white;
+    color: gray;
+    box-shadow: 0 3px 2px rgba(0,0,0,0.3);
+  }
+
+  .dropdown:hover .dropdown_menu {
+    display: block;
+  }
+
+  .dropdown_menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+    border-top: solid 1px #e0e0e0;
+  }
+
+  .dropdown_menu a:hover {
+    background: #f0f0f0;
+    color: #323b40;
+  }
   
   /* Service Box */
   .service-box {
@@ -850,7 +896,6 @@
   border: dotted;
   grid-area: 1 / 1 / 5 / 4;
 }
-
 #about-pic-2 {
   border: dotted;
   grid-area: 1 / 4 / 2 / 5;

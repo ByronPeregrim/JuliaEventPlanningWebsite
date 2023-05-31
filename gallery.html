@@ -6,36 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="sticky-header-box">
-        <img class="sticky-header-logo" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
-        <img class="sticky-header-mobile-menu-icon" src="images/STOCK-mobile-menu-icon.png" alt="Menu">
-    </div>
 
-    <div id="non-homepage-banner-box" class="homepage-banner-box">
-        <div class="desktop-menu-box">
-            <div class="desktop-menu-left">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <div class="dropdown">
-                    <button class="dropdown_hover">Services</button>
-                    <div class="dropdown_menu">
-                        <a href="weddings.html">Weddings</a>
-                        <a href="social-events.html">Social Events</a>
-                        <a href="corporate-events.html">Corporate Events</a>
+    <header>
+        <div class="sticky-header-box">
+            <a href="index.html">
+                <img class="sticky-header-logo" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
+           </a>
+           <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+              <li class="mobile-menu-selection"><a href="index.html">Home</a></li>
+              <li class="mobile-menu-selection"><a onclick="event.stopPropagation(); toggleServiceMenu()">Services ></a></li>
+              <li id="service-menu">
+                <ul>
+                    <li><a onclick="serviceMenuBack()" href="#">< Back</a></li>
+                    <li><a href="weddings.html">Weddings</a></li>
+                    <li><a href="social-events.html">Social Events</a></li>
+                    <li><a href="corporate-events.html">Corporate Events</a></li>
+                </ul>
+              </li>
+              <li class="mobile-menu-selection"><a href="about.html">About</a></li>
+              <li class="mobile-menu-selection selected-menu-item"><a href="gallery.html">Gallery</a></li>
+              <li class="mobile-menu-selection"><a href="testimonials.html">Testimonials</a></li>
+              <li class="mobile-menu-selection"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div id="non-homepage-banner-box" class="homepage-banner-box">
+            <div class="desktop-menu-box">
+                <div class="desktop-menu-left">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <div class="dropdown">
+                        <button class="dropdown_hover">Services</button>
+                        <div class="dropdown_menu">
+                            <a href="weddings.html">Weddings</a>
+                            <a href="social-events.html">Social Events</a>
+                            <a href="corporate-events.html">Corporate Events</a>
+                        </div>
                     </div>
                 </div>
+                <img id="non-homepage-banner-logo" class="homepage-banner-logo" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
+                <div class="desktop-menu-right">
+                    <a class="selected-menu-item" href="gallery.html">Gallery</a>
+                    <a href="testimonials.html">Testimonials</a>
+                    <a href="contact.html">Contact</a>
+                </div>
             </div>
-            <img id="non-homepage-banner-logo" class="homepage-banner-logo" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
-            <div class="desktop-menu-right">
-                <a href="gallery.html">Gallery</a>
-                <a href="testimonials.html">Testimonials</a>
-                <a href="contact.html">Contact</a>
-            </div>
+            <h1 id="non-homepage-banner-text" class="homepage-banner-text">Julia Rose Event Planning Co.</h1>
         </div>
-        <h1 id="non-homepage-banner-text" class="homepage-banner-text">Julia Rose Event Planning Co.</h1>
-    </div>
+    </header>
+    
 
     <div id="footer-box">
         <div id="footer-left-box">

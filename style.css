@@ -372,6 +372,15 @@
   a {
   text-decoration: none;
   color: black;
+  padding: 15px;
+  }
+
+  .selected-menu-item {
+    font-weight: bold;
+  }
+
+  #service-menu {
+    display: none;
   }
   
   /* Sticky Header */
@@ -392,10 +401,101 @@
   margin-left: 1rem;
   }
   
-  .sticky-header-mobile-menu-icon {
-  height: 2.5rem;
-  margin-right: 1rem;
+  #hamburger-icon {
+    margin: auto 0;
+    display: block;
+    cursor: pointer;
   }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3.5px;
+    border-radius: 10px;
+    background-color: black;
+    margin: 6px 15px;
+    transition: 0.4s;
+  }
+
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(167, 162, 162, 0.97);
+    background-color: 50%;
+    list-style: none;
+    height: 20rem;
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+
+  .mobile-menu .mobile-menu-selection {
+    margin-bottom: 10px;
+    margin-right: 79px;
+    padding: 5px;
+  }
+
+  .mobile-menu .mobile-menu-selection:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  } 
+
+  .service-open .mobile-menu .mobile-menu-selection {
+    display: none;
+  }
+
+  .service-open .mobile-menu #service-menu {
+    display: block;
+  }
+
+  .service-open .mobile-menu #service-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 37px;
+  }
+
+  #service-menu ul {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(167, 162, 162, 0.97);
+    background-color: 50%;
+    list-style: none;
+  }
+
+  #service-menu ul li {
+    margin-bottom: 10px;
+    padding: 5px;
+    margin-right: 118px;
+  }
+
+  #service-menu ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
   
   /* Homepage Banner */
 
@@ -468,6 +568,19 @@
   .dropdown_menu a:hover {
     background: #f0f0f0;
     color: #323b40;
+  }
+
+  /* Mobile Menu */
+
+  .mobile-menu  li {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .mobile-menu {
+    display: none;
+    float: right;
+    margin-right: 20px;
   }
   
   /* Service Box */

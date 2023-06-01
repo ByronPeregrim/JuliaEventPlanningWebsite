@@ -7,10 +7,11 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 </head>
 <body>
     <header>
-        <div class="sticky-header-box">
+        <div id="contact-page-sticky-header" class="sticky-header-box">
             <a href="index.html">
                 <img class="sticky-header-logo" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
            </a>
@@ -37,7 +38,7 @@
           </div>
         </div>
     
-        <div id="non-homepage-banner-box" class="homepage-banner-box">
+        <div id="contact-page-banner-box" class="homepage-banner-box">
             <div class="desktop-menu-box">
                 <div class="desktop-menu-left">
                     <a href="index.html">Home</a>
@@ -62,59 +63,27 @@
         </div>
     </header>
 
-    <div id="contact-form-wrapper">
-        <form action="#" method="post">
-            <ul>
-                <li>
-                    <label for="first_name">First Name:</label>
-                    <input type="text" id="first_name" name="first_name">
-                </li>
-                <li>
-                    <label for="last_name">Last Name:</label>
-                    <input type="text" id="last_name" name="last_name">
-                </li>
-                <li>
-                    <label for="user_email">Email:</label>
-                    <input type="email" id="user_email" name="email" placeholder="you@example.com">
-                </li>
-                <li>
-                    <label for="tel">Phone:</label>
-                    <input type="tel" id="tel" name="tel" />
-                </li>
-                <li>
-                    <label for="company_name">Company Name:</label>
-                    <input type="text" id="company_name" name="company_name">
-                </li>
-                <li>
-                    <label for="event_type">Event Type:</label>
-                    <input type="text" id="event_type" name="event_type">
-                </li>
-                <li>
+    <div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2 id="contact-header">Contact Us</h2>
+                <div id="required-instruction">* required</div>
+                <input type="text" class="field" placeholder="First Name *" name="first_name" required>
+				<input type="text" class="field" placeholder="Last Name *" name="last_name" required>
+				<input type="text" class="field" placeholder="Email *" name="email" required>
+				<input type="text" class="field" placeholder="Phone *" name="phone" required>
+                <input type="text" class="field" placeholder="Company Name" name="company_name">
+                <input type="text" class="field" placeholder="Event Type" name="event_type">
+                <div id="date-wrapper">
                     <label for="event_date">Event Date:</label>
-                    <input type="date" id="event_date" name="event_date">
-                </li>
-                <li>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <button type="submit">Submit</button>
-            </ul>
-            
-            
-            
-
-            
-
-            
-
-            
-
-            
-
-
-           
-        </form>
-    </div>
+                    <input type="date" id="event_date" class="field" name="event_date">
+                </div>
+				<textarea placeholder="Message *" class="field" required></textarea>
+				<button class="btn">Send</button>
+			</div>
+		</div>
+	</div>
     
 
     <div id="footer-box">
@@ -122,7 +91,7 @@
         </div>
         <div id="footer-right-box">
             <ul id="contact-info-list">
-                <li>Julia Rose Events </li>
+                <li>Julia Rose Event Planning</li>
                 <li>Saratoga Springs, New York</li>
                 <li>Phone: (518) 506-7796</li>
                 <li>Email: JuliaRoseEvents@gmail.com</li>

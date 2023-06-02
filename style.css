@@ -38,7 +38,6 @@
    */
   
   h1 {
-    font-size: 2em;
     margin: 0.67em 0;
   }
   
@@ -356,6 +355,10 @@
   * {
   font-size: 16px;
   font-family: Helvetica;
+  color: dimgray;
+  }
+  body {
+    background-color: #fff0ee;
   }
   h2 {
   font-size: calc(16 * 1.618px);
@@ -394,9 +397,10 @@
   position: fixed;
   width: 100%;
   background-color: white;
+  z-index: 20;
   }
   
-  .sticky-header-logo {
+  .sticky-header-box a img {
   height: 4rem;
   margin-left: 1rem;
   }
@@ -447,6 +451,7 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 10px;
+    z-index: 10;
   }
 
   .mobile-menu .mobile-menu-selection {
@@ -518,7 +523,7 @@
   margin-top: 1rem;
   }
   
-  .homepage-banner-text {
+  .homepage-banner-box h1{
   width: 10rem;
   text-align: center;
   font-size: calc(16px * 1.618);
@@ -587,21 +592,17 @@
   .service-box {
   height: 18rem;
   display: flex;
+  flex-direction: column;
   margin-top: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  justify-content: center;
   }
   
-  .service-box-left {
-  width: 50%;
-  }
   
-  .service-box-right {
-  width: 50%;
-  }
-  
-  .service-button {
+  .service-box button {
   margin-top: 1rem;
+  width: 35%;
   }
   
   /* Photo Box */
@@ -612,6 +613,7 @@
   min-width: 300px;
   margin-left: 5px;
   padding-top: 3rem;
+  background-image: linear-gradient(#fff0ee 0%, mistyrose 20%, mistyrose 80%, #fff0ee);
   }
   
   .photo-reel {
@@ -634,15 +636,22 @@
   #top-right-photo-box {
   border: solid;
   grid-area: 1 / 4 / 6 / 8;
+  background-image: url(images/wedding-photo-2.jpeg);
+  background-repeat: no-repeat;
+  background-size:cover;
   }
   
   #bottom-left-photo-box {
   border: solid;
   grid-area: 4 / 1 / 8 / 6;
+  z-index: 0;
+  background-image: url(images/STOCK-wedding-couple-1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
   }
   
   /* Social Events Photos */
-  #social-events-photos-box {
+  #social-events-photos {
   aspect-ratio: 1;
   width: 95%;
   display: grid;
@@ -657,21 +666,33 @@
   #social-events-photo-top-left {
   border: solid;
   grid-area: 1 / 1 / 11 / 11;
+  background-image: url(images/party-1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
   }
   
   #social-events-photo-top-right {
   border: solid;
   grid-area: 1 / 12 / 11 / 22;
+  background-image: url(images/party-2.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
   }
   
   #social-events-photo-bottom-left {
   border: solid;
   grid-area: 12 / 1 / 22 / 11;
+  background-image: url(images/party-3.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
   }
   
   #social-events-photo-bottom-right {
   border: solid;
   grid-area: 12 / 12 / 22 / 22;
+  background-image: url(images/party-4.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
   }
   
   /* Corporate Events */
@@ -702,6 +723,19 @@
   #desktop-corporate-text {
   display: none;
   }
+
+  #desktop-corporate-text h2 {
+    font-size: calc(16px * 1.618 * 1.618);
+  }
+
+  #desktop-corporate-text div {
+    font-size: calc(16px * 1.618);
+  }
+
+  #desktop-corporate-text button {
+    width: 45%;
+    margin-top: 1rem;
+  }
   
   /* Instagram Box */
   #instagram-box {
@@ -713,6 +747,7 @@
   margin-top: 3rem;
   padding-top: 1rem;
   text-align: center;
+  background-image: linear-gradient(#fff0ee 0%, mistyrose 20%, mistyrose 80%, #fff0ee);
   }
   
   #instagram-picture-box {
@@ -790,9 +825,19 @@
   
   /* Responsive Styles */
   @media (min-width: 1000px) {
+
+  h2 {
+    font-size: calc(16px*1.618*1.618);
+  }
+
   /* Homepage Banner */
   .homepage-banner-logo {
   width: 7.5rem;
+  }
+
+  .homepage-banner-box h1{
+    width: auto;
+    font-size: calc(16px*1.618*1.618);
   }
   
   /* Instagram Box */
@@ -830,10 +875,6 @@
   display: none;
   }
   
-  .service-box-left {
-  padding-top: 5rem;
-  }
-  
   /* Photo Box */
   .photo-box {
   min-width: 1000px;
@@ -845,27 +886,29 @@
   #top-left-text {
   display: flex;
   flex-direction: column;
-  grid-area: 1 / 1 / 6 / 6;
+  grid-area: 1 / 1 / 7 / 8;
+  }
+
+  #top-left-text div {
+    font-size: calc(16px*1.618);
   }
   
-  #top-left-text-button {
+  #top-left-text button {
   justify-self: center;
   margin-top: 2rem;
   }
   
   #top-right-photo-box {
-  border: solid;
-  grid-area: 1 / 7 / 12 / 16;
+  grid-area: 1 / 9 / 12 / 18;
   }
   
   #bottom-left-photo-box {
-  border: solid;
-  grid-area: 7 / 1 / 16 / 12;
+  grid-area: 9 / 1 / 18 / 12;
   }
-  
+
   #wedding-photos-box {
-  grid-template-columns: repeat(15, 3rem);
-  grid-template-rows: repeat(15, 3rem);
+  grid-template-columns: repeat(17, 3rem);
+  grid-template-rows: repeat(17, 3rem);
   width: auto;
   }
   
@@ -878,11 +921,6 @@
   .homepage-banner-box {
   padding-top: 1rem;
   height: 40rem;
-  }
-  
-  .homepage-banner-text {
-  font-size: calc(16*1.618px);
-  width: auto;
   }
   
   /* Desktop Menu */
@@ -908,13 +946,30 @@
   margin-left: 2rem;
   text-align: left;
   }
+
+  #social-events-text-box h2 {
+    font-size: calc(16px*1.618*1.618);
+  }
+
+  #social-events-text-box div {
+    font-size: calc(16px * 1.618);
+  }
+
+  #social-events-text-box ul li {
+    font-size: calc(16px);
+  }
+
+  #social-events-text-box button {
+    width: 50%;
+    align-self: center;
+  }
   
   #contact-text {
   width: auto;
   margin-bottom: 1rem;
   }
   
-  #social-events-photos-box {
+  #social-events-photos {
   width: 30rem;
   }
   
@@ -923,12 +978,12 @@
   width: 30rem;
   }
   
-  #social-events-text {
+  #social-events-text-box div {
   text-align: left;
   }
   
   /* Service Button */
-  .service-button {
+  .service-box button {
   width: 50%;
   align-self: center;
   }
@@ -958,16 +1013,13 @@
 }
 
 #non-homepage-banner-text {
-  font-size: 16px;
+  font-size: calc(16px*1.618*1.618);
 }
 
 @media (min-width: 1000px) {
   #non-homepage-banner-logo {
     width: 7.5rem;
-  } 
-  #non-homepage-banner-text {
-    font-size: calc(16px*1.618);
-  } 
+  }
 }
 
 /* About Page */
@@ -1061,14 +1113,19 @@
   height: 20rem;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+}
+
 .container{
 	position: relative;
-	width: 94%;
+	width: 100%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 100px 20px;
+	padding: 20px 20px;
 }
 
 .container:after{
@@ -1080,6 +1137,7 @@
 	top: 0;
 	background: url("images/STOCK-homepage-banner-background.jpg") no-repeat center;
 	background-size: cover;
+  background-position-y: 20%;
 	filter: blur(50px);
 	z-index: -1;
 }
@@ -1112,14 +1170,14 @@
 
 #contact-header:after{
 	content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: pink;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: pink;
 }
 
 .field{
@@ -1131,6 +1189,11 @@
 	font-size: 1.1rem;
 	margin-bottom: 22px;
 	transition: .3s;
+}
+
+input:not(:placeholder-shown):invalid {
+    background-color: rgba(235, 182, 182, 0.452);
+    border-color: rgba(255, 137, 137, 0.548);
 }
 
 .field:hover{
@@ -1203,7 +1266,7 @@ label {
 		grid-template-columns: 1fr;
 	}
 	.left{
-		height: 200px;
+		height: 250px;
     background-size: 100%;
     background-position-y: 22%;
 	}
@@ -1216,5 +1279,11 @@ label {
 @media screen and (min-width: 522px) {
   label {
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 363px) {
+  input[type='tel'] {
+    font-size: 16px;
   }
 }

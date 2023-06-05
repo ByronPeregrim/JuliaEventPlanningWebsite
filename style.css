@@ -350,44 +350,72 @@
 
 /* End of normalize.css.*/
 
+/* Variables */
+
+:root {
+  --font: 16px;
+  --big-font: calc(16px*1.618);
+  --bigger-font: calc(16px*1.618*1.618);
+  --biggest-font: calc(16px*1.618*1.618*1.618);
+}
+
 /* Global styles */
 
-  * {
+* {
   font-size: 16px;
   font-family: Helvetica;
   color: dimgray;
-  }
-  body {
-    background-color: #fff0ee;
-  }
-  h2 {
-  font-size: calc(16 * 1.618px);
-  }
-  
-  h1 {
-  font-size: calc(16 * 1.618 * 1.618px);
-  }
-  
-  li {
+}
+
+body {
+  background-color: #fff0ee;
+}
+
+h2 {
+  font-size: var(--bigger-font);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--bigger-font)
+}
+
+li {
   font-size: 14px;
-  }
-  
-  a {
+}
+
+a {
   text-decoration: none;
-  color: black;
   padding: 15px;
-  }
+}
 
-  .selected-menu-item {
-    font-weight: bold;
+@media (max-width: 400px) {
+  li {
+    font-size: 11px;
   }
+}
 
-  #service-menu {
-    display: none;
+@media (min-width: 1000px) {
+
+  h2 {
+    font-size: var(--bigger-font);
   }
   
-  /* Sticky Header */
-  .sticky-header-box {
+}
+
+/* ~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~*/
+
+.selected-menu-item {
+  font-weight: bold;
+}
+
+#service-menu {
+  display: none;
+}
+
+/* Sticky Header */
+
+.sticky-header-box {
   height: 5rem;
   border-bottom: solid;
   border-bottom-width: thin;
@@ -398,135 +426,142 @@
   width: 100%;
   background-color: white;
   z-index: 20;
-  }
-  
-  .sticky-header-box a img {
+}
+
+.sticky-header-box a img {
   height: 4rem;
   margin-left: 1rem;
-  }
-  
-  #hamburger-icon {
-    margin: auto 0;
-    display: block;
-    cursor: pointer;
-  }
-  
-  #hamburger-icon div {
-    width: 35px;
-    height: 3.5px;
-    border-radius: 10px;
-    background-color: black;
-    margin: 6px 15px;
-    transition: 0.4s;
-  }
+}
 
-  .open .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
-  }
-  
-  .open .bar2 {
-    opacity: 0;
-  }
-  
-  .open .bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
-  }
+#hamburger-icon {
+  margin: auto 0;
+  display: block;
+  cursor: pointer;
+}
 
-  .mobile-menu {
-    position: absolute;
-    top: 65px;
-    left: 0;
-    width: 100%;
-    background-color: rgba(167, 162, 162, 0.97);
-    background-color: 50%;
-    list-style: none;
-    height: 20rem;
-  }
-  
-  .open .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 10px;
-    z-index: 10;
-  }
+#hamburger-icon div {
+  width: 35px;
+  height: 3.5px;
+  border-radius: 10px;
+  background-color: black;
+  margin: 6px 15px;
+  transition: 0.4s;
+}
 
-  .mobile-menu .mobile-menu-selection {
-    margin-bottom: 10px;
-    margin-right: 79px;
-    padding: 5px;
-  }
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
 
-  .mobile-menu .mobile-menu-selection:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-  } 
+.open .bar2 {
+  opacity: 0;
+}
 
-  .service-open .mobile-menu .mobile-menu-selection {
-    display: none;
-  }
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
 
-  .service-open .mobile-menu #service-menu {
-    display: block;
-  }
+.mobile-menu {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(167, 162, 162, 0.97);
+  background-color: 50%;
+  list-style: none;
+  height: 20rem;
+}
 
-  .service-open .mobile-menu #service-menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 37px;
-  }
-
-  #service-menu ul {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background-color: rgba(167, 162, 162, 0.97);
-    background-color: 50%;
-    list-style: none;
-  }
-
-  #service-menu ul li {
-    margin-bottom: 10px;
-    padding: 5px;
-    margin-right: 118px;
-  }
-
-  #service-menu ul li:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
-  
-  
-  /* Homepage Banner */
-
-  .desktop-menu-left,
-  .desktop-menu-right {
-    display: none;
-  }
-
-  .homepage-banner-box {
-  padding-top: 5rem;
-  height: 30rem;
+.open .mobile-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  padding-top: 10px;
+  z-index: 10;
+}
+
+.mobile-menu .mobile-menu-selection {
+  margin-bottom: 10px;
+  margin-right: 79px;
+  padding: 5px;
+}
+
+.mobile-menu .mobile-menu-selection:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+} 
+
+.service-open .mobile-menu .mobile-menu-selection {
+  display: none;
+}
+
+.service-open .mobile-menu #service-menu {
+  display: block;
+}
+
+#service-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 37px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+#service-menu ul li {
+  margin-bottom: 10px;
+  padding: 5px;
+  margin-right: 118px;
+}
+
+#service-menu ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.desktop-menu-left,
+.desktop-menu-right {
+  display: none;
+}
+
+/* Mobile Menu */
+
+.mobile-menu  li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.mobile-menu {
+  display: none;
+  float: right;
+  margin-right: 20px;
+}
+
+@media (min-width: 900px) {
+
+  /* Sticky Header */
+
+  .sticky-header-box {
+    display: none;
   }
-  
-  .homepage-banner-logo {
-  height: auto;
-  width: 10rem;
-  margin-top: 1rem;
+      
+  /* Desktop Menu */
+  .desktop-menu-box {
+    display:flex;
+    align-items: center;
   }
-  
-  .homepage-banner-box h1{
-  width: 10rem;
-  text-align: center;
-  font-size: calc(16px * 1.618);
+    
+  .desktop-menu-left,
+  .desktop-menu-right {
+    height: 5rem;
+    width: 25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   /* Dropdown Menu */
@@ -540,7 +575,7 @@
   .dropdown_hover {
     display: inline-block;
     border: none;
-    background: white;
+    background: #fff0ee;
   }
 
   .dropdown_hover:hover {
@@ -575,432 +610,7 @@
     color: #323b40;
   }
 
-  /* Mobile Menu */
-
-  .mobile-menu  li {
-    text-decoration: none;
-    list-style: none;
-  }
-
-  .mobile-menu {
-    display: none;
-    float: right;
-    margin-right: 20px;
-  }
-  
-  /* Service Box */
-  .service-box {
-  height: 18rem;
-  display: flex;
-  flex-direction: column;
-  margin-top: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  justify-content: center;
-  }
-  
-  
-  .service-box button {
-  margin-top: 1rem;
-  width: 35%;
-  }
-  
-  /* Photo Box */
-  .photo-box {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  min-width: 300px;
-  margin-left: 5px;
-  padding-top: 3rem;
-  background-image: linear-gradient(#fff0ee 0%, mistyrose 20%, mistyrose 80%, #fff0ee);
-  }
-  
-  .photo-reel {
-  display: none;
-  }
-  
-  /* Wedding Photos */
-  #wedding-photos-box {
-  aspect-ratio: 1;
-  width: 95%;
-  display: grid;
-  grid-template-columns: repeat(7, auto);
-  grid-template-rows: repeat(7, auto);
-  }
-  
-  #top-left-text {
-  display: none;
-  }
-  
-  #top-right-photo-box {
-  border: solid;
-  grid-area: 1 / 4 / 6 / 8;
-  background-image: url(images/wedding-photo-2.jpeg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  }
-  
-  #bottom-left-photo-box {
-  border: solid;
-  grid-area: 4 / 1 / 8 / 6;
-  z-index: 0;
-  background-image: url(images/STOCK-wedding-couple-1.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  }
-  
-  /* Social Events Photos */
-  #social-events-photos {
-  aspect-ratio: 1;
-  width: 95%;
-  display: grid;
-  grid-template-columns: repeat(21, auto);
-  grid-template-rows: repeat(21, auto);
-  }
-  
-  #social-events-text-box {
-  display: none;
-  }
-  
-  #social-events-photo-top-left {
-  border: solid;
-  grid-area: 1 / 1 / 11 / 11;
-  background-image: url(images/party-1.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  }
-  
-  #social-events-photo-top-right {
-  border: solid;
-  grid-area: 1 / 12 / 11 / 22;
-  background-image: url(images/party-2.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  }
-  
-  #social-events-photo-bottom-left {
-  border: solid;
-  grid-area: 12 / 1 / 22 / 11;
-  background-image: url(images/party-3.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  }
-  
-  #social-events-photo-bottom-right {
-  border: solid;
-  grid-area: 12 / 12 / 22 / 22;
-  background-image: url(images/party-4.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  }
-  
-  /* Corporate Events */
-  #corporate-events-photos-box {
-    aspect-ratio: 1.25;
-    width: 95%;
-    display: grid;
-    grid-template-columns: repeat(20, 5%);
-    grid-template-rows: (50, 2%);
-  }
-  
-  .corporate-photo {
-    border: solid;
-  }
-  
-  #corporate-photo-left {
-    grid-area: 5 / 1 / 22 / 7;
-  }
-  
-  #corporate-photo-middle {
-    grid-area: 3 / 8 / 20 / 14;
-  }
-  
-  #corporate-photo-right {
-    grid-area: 1 / 15 / 18 / 21;
-  }
-  
-  #desktop-corporate-text {
-  display: none;
-  }
-
-  #desktop-corporate-text h2 {
-    font-size: calc(16px * 1.618 * 1.618);
-  }
-
-  #desktop-corporate-text div {
-    font-size: calc(16px * 1.618);
-  }
-
-  #desktop-corporate-text button {
-    width: 45%;
-    margin-top: 1rem;
-  }
-  
-  /* Instagram Box */
-  #instagram-box {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem;
-  margin-top: 3rem;
-  padding-top: 1rem;
-  text-align: center;
-  background-image: linear-gradient(#fff0ee 0%, mistyrose 20%, mistyrose 80%, #fff0ee);
-  }
-  
-  #instagram-picture-box {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-  
-  #instagram-picture-1 {
-  border: solid;
-  aspect-ratio: 1;
-  width: 80%;
-  margin-top: 5rem;
-  }
-  
-  #instagram-picture-2 {
-  border: solid;
-  aspect-ratio: 0.75;
-  width: 50%;
-  margin-top: 5rem;
-  }
-  
-  #instagram-picture-3 {
-  border: solid;
-  aspect-ratio: 2;
-  width: 90%;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  }
-  
-  /* Footer */
-  #footer-box {
-  height: 10rem;
-  display: flex;
-  border-top: solid;
-  }
-  
-  #footer-left-box,
-  #footer-right-box {
-  height: 100%;
-  width: 50%;
-  }
-  
-  #footer-right-box,
-  #footer-left-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-  
-  #contact-info-list {
-  list-style: none;
-  margin-left: -20%;
-  }
-
-  #contact-text {
-    text-align: center;
-    margin-right: .5rem;
-  }
-
-  @media (max-width: 400px) {
-    li {
-      font-size: 11px;
-    }
-  }
-
-  #copyright {
-    font-size: 12px;
-  }
-  
-  #footer-left-box {
-  flex-direction: column;
-  }
-  
-  /* Responsive Styles */
-  @media (min-width: 1000px) {
-
-  h2 {
-    font-size: calc(16px*1.618*1.618);
-  }
-
-  /* Homepage Banner */
-  .homepage-banner-logo {
-  width: 7.5rem;
-  }
-
-  .homepage-banner-box h1{
-    width: auto;
-    font-size: calc(16px*1.618*1.618);
-  }
-  
-  /* Instagram Box */
-  #instagram-box {
-  border: none;
-  height: auto;
-  margin-bottom: 5rem;
-  margin-top: 7rem;
-  }
-  
-  #instagram-picture-1,
-  #instagram-picture-2,
-  #instagram-picture-3 {
-  display: none;
-  }
-  
-  #instagram-picture-box {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-top: 3rem;
-  justify-content: space-evenly;
-  }
-  
-  /* Photo Reel */
-  .photo-reel {
-  display: block;
-  border: solid;
-  width: 10%;
-  aspect-ratio: 1;
-  }
-  
-  /* Service Box */
-  .service-box {
-  display: none;
-  }
-  
-  /* Photo Box */
-  .photo-box {
-  min-width: 1000px;
-  border: none;
-  margin-bottom: 5rem;
-  }
-  
-  /* Wedding Photos */
-  #top-left-text {
-  display: flex;
-  flex-direction: column;
-  grid-area: 1 / 1 / 7 / 8;
-  }
-
-  #top-left-text div {
-    font-size: calc(16px*1.618);
-  }
-  
-  #top-left-text button {
-  justify-self: center;
-  margin-top: 2rem;
-  }
-  
-  #top-right-photo-box {
-  grid-area: 1 / 9 / 12 / 18;
-  }
-  
-  #bottom-left-photo-box {
-  grid-area: 9 / 1 / 18 / 12;
-  }
-
-  #wedding-photos-box {
-  grid-template-columns: repeat(17, 3rem);
-  grid-template-rows: repeat(17, 3rem);
-  width: auto;
-  }
-  
-  /* Sticky Header */
-  .sticky-header-box {
-  display: none;
-  }
-  
-  /* Homepage Banner */
-  .homepage-banner-box {
-  padding-top: 1rem;
-  height: 40rem;
-  }
-  
-  /* Desktop Menu */
-  .desktop-menu-box {
-  display:flex;
-  align-items: center;
-  }
-  
-  .desktop-menu-left,
-  .desktop-menu-right {
-  height: 5rem;
-  width: 25rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  }
-  
-  /* Social Events */
-  #social-events-text-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 2rem;
-  text-align: left;
-  }
-
-  #social-events-text-box h2 {
-    font-size: calc(16px*1.618*1.618);
-  }
-
-  #social-events-text-box div {
-    font-size: calc(16px * 1.618);
-  }
-
-  #social-events-text-box ul li {
-    font-size: calc(16px);
-  }
-
-  #social-events-text-box button {
-    width: 50%;
-    align-self: center;
-  }
-  
-  #contact-text {
-  width: auto;
-  margin-bottom: 1rem;
-  }
-  
-  #social-events-photos {
-  width: 30rem;
-  }
-  
-  /* Corporate Events */
-  #corporate-events-photos-box {
-  width: 30rem;
-  }
-  
-  #social-events-text-box div {
-  text-align: left;
-  }
-  
-  /* Service Button */
-  .service-box button {
-  width: 50%;
-  align-self: center;
-  }
-  
-  #desktop-corporate-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 2rem;
-  width: 30rem;
-  }
-  
-  #corporate-photo-box {
-  display: flex;
-  }
 }
-
 
 /*Non-Homepage Header*/
 
@@ -1012,17 +622,533 @@
   width: 5rem;
 }
 
-#non-homepage-banner-text {
-  font-size: calc(16px*1.618*1.618);
-}
+@media (min-width: 900px) {
 
-@media (min-width: 1000px) {
   #non-homepage-banner-logo {
     width: 7.5rem;
   }
+
+  #non-homepage-banner-text {
+    font-size: var(--bigger-font);
+  }
+
 }
 
-/* About Page */
+/* ~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~*/
+
+#footer-box {
+  height: 10rem;
+  display: flex;
+  border-top: solid;
+}
+
+#footer-right-box,
+#footer-left-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+#footer-left-box {
+  flex-direction: column;
+}
+
+#footer-left-box div {
+  text-align: center;
+  margin-right: .5rem;
+  font-size: var(--big-font);
+}
+
+#footer-left-box button {
+  margin-top: 10px;
+}
+
+#footer-right-box ul {
+  list-style: none;
+  margin-left: -20%;
+}
+
+#copyright {
+  font-size: 12px;
+}
+
+@media (min-width: 1000px) {
+  #footer-right-box ul li {
+    font-size: 18px;
+  }
+
+}
+
+/* ~~~~~~~~~~~~~~~ HOME PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Homepage Banner */
+
+.homepage-banner-box {
+  padding-top: 5rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage-banner-logo {
+  height: auto;
+  width: 10rem;
+  margin-top: 1rem;
+}
+
+.homepage-banner-box h1{
+  width: 10rem;
+  text-align: center;
+  font-size: var(--big-font);
+}
+
+@media (min-width: 900px) {
+
+  .homepage-banner-logo {
+    width: 7.5rem;
+  }
+
+  .homepage-banner-box h1{
+    width: auto;
+    font-size: var(--bigger-font);
+  }
+
+  .homepage-banner-box {
+    padding-top: 1rem;
+    height: 40rem;
+  }
+
+}
+
+/* Service Box */
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 1rem 3rem 1rem;
+  justify-content: center;
+}
+
+.service-box button {
+  margin-top: 1rem;
+  width: fit-content;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.service-box h2 {
+  font-size: var(--big-font);
+}
+
+@media (min-width: 1000px) {
+
+  .service-box {
+    display: none;
+  }
+
+  /* Service Button */
+  .service-box button {
+    width: 50%;
+    align-self: center;
+    }
+  
+}
+
+/* Photo Box */
+
+.photo-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-width: 300px;
+  margin-left: 5px;
+  padding-top: 3rem;
+  background-image: linear-gradient(#fff0ee 0%, mistyrose 20%, mistyrose 80%, #fff0ee);
+}
+
+.photo-reel {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  
+  .photo-box {
+    min-width: 1000px;
+    border: none;
+    margin-bottom: 5rem;
+  }
+
+}
+
+/* WEDDING SECTION */
+
+#home-wedding-photos {
+  aspect-ratio: 1;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(7, auto);
+}
+
+#top-left-text {
+  display: none;
+}
+
+#top-right-photo-box {
+  border: solid;
+  grid-area: 1 / 4 / 6 / 8;
+  background-image: url(images/wedding-photo-2.jpeg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+#bottom-left-photo-box {
+  border: solid;
+  grid-area: 4 / 1 / 8 / 6;
+  z-index: 0;
+  background-image: url(images/STOCK-wedding-couple-1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+@media (min-width: 650px) {
+
+  #wedding-box {
+    display: none;
+  }
+
+  #top-left-text {
+    display: flex;
+    flex-direction: column;
+    grid-area: 2 / 2 / 7 / 8;
+  }
+    
+  #top-left-text h2 {
+    font-size: var(--big-font);
+  }
+    
+  #top-left-text button {
+    justify-self: center;
+    margin-top: 1.5rem;
+  }
+
+  #home-wedding-photos {
+    grid-template-columns: repeat(17, 5%);
+    grid-template-rows: repeat(17, 5%);
+    width: auto;
+    justify-content: center;
+    align-content: center;
+  }
+    
+  #top-right-photo-box {
+    grid-area: 1 / 9 / 12 / 18;
+  }
+    
+  #bottom-left-photo-box {
+    grid-area: 9 / 1 / 18 / 12;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  #top-left-text {
+    grid-area: 1 / 1 / 7 / 8;
+  }
+
+  #top-left-text button {
+    margin-top: .5rem;
+  }
+
+
+}
+
+@media (min-width: 900px) {
+
+  /* Wedding Photos */
+  #top-left-text {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 1 / 7 / 8;
+  }
+
+  #top-left-text h2 {
+    font-size: var(--bigger-font);
+  }
+
+  #top-left-text div {
+    font-size: var(--big-font);
+  }
+  
+  #top-left-text button {
+    justify-self: center;
+    margin-top: 2rem;
+  }
+  
+  #top-right-photo-box {
+    grid-area: 1 / 9 / 12 / 18;
+  }
+  
+  #bottom-left-photo-box {
+    grid-area: 9 / 1 / 18 / 12;
+  }
+
+  #home-wedding-photos {
+    grid-template-columns: repeat(17, 3rem);
+    grid-template-rows: repeat(17, 3rem);
+    width: auto;
+  }
+
+}
+
+/* SOCIAL EVENTS SECTION */
+
+#social-events-photos {
+  aspect-ratio: 1;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(21, auto);
+  grid-template-rows: repeat(21, auto);
+}
+
+#social-events-photos div {
+  background-repeat: no-repeat;
+  background-size:cover;
+  border: solid;
+}
+
+#social-events-text-box {
+  display: none;
+}
+
+#social-events-photo-top-left {
+  grid-area: 1 / 1 / 11 / 11;
+  background-image: url(images/bridal-shower-1.jpg);
+  background-position-x: -25px;
+}
+
+#social-events-photo-top-right {
+  grid-area: 1 / 12 / 11 / 22;
+  background-image: url(images/party-2.jpg);
+}
+
+#social-events-photo-bottom-left {
+  grid-area: 12 / 1 / 22 / 11;
+  background-image: url(images/party-3.jpg);
+}
+
+#social-events-photo-bottom-right {
+  grid-area: 12 / 12 / 22 / 22;
+  background-image: url(images/bridal-shower-invitations.jpg);
+}
+
+@media (min-width: 900px) {
+
+  #social-events-photo-box {
+    margin-top: 5rem;
+  }
+  
+  #social-events-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    text-align: left;
+  }
+
+  #social-events-text-box h2 {
+    font-size: var(--bigger-font);
+  }
+
+  #social-events-text-box div {
+    font-size: var(--big-font);
+  }
+
+  #social-events-text-box ul li {
+    font-size: var(--font);
+  }
+
+  #social-events-text-box button {
+    width: 50%;
+    align-self: center;
+  }
+  
+  #social-events-photos {
+    width: 50%;
+    max-width: 40rem;
+    margin-left: 1rem;
+  }
+
+}
+
+/* CORPORATE EVENTS SECTION */
+
+#corporate-events-photos-box {
+  aspect-ratio: 1.25;
+  width: 95%;
+  max-width: 50rem;
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: (50, 2%);
+}
+
+.corporate-photo {
+  border: solid;
+}
+
+#corporate-photo-left {
+  grid-area: 5 / 1 / 22 / 7;
+  background-image: url(images/corporate-1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position-x: 10%;
+}
+
+#corporate-photo-middle {
+  grid-area: 3 / 8 / 20 / 14;
+  background-image: url(images/corporate-2.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+#corporate-photo-right {
+  grid-area: 1 / 15 / 18 / 21;
+  background-image: url(images/corporate-3.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+}
+
+#desktop-corporate-text {
+  display: none;
+}
+
+#desktop-corporate-text h2 {
+  font-size: var(--bigger-font);
+}
+
+#desktop-corporate-text div {
+  font-size: var(--big-font);
+}
+
+#desktop-corporate-text button {
+  width: 45%;
+  margin-top: 1rem;
+}
+
+@media (min-width: 900px) {
+
+  .service-box {
+    display: none;
+  }
+  
+  #desktop-corporate-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    width: 30rem;
+  }
+  
+  #corporate-photo-box {
+    display: flex;
+  }
+
+}
+
+/* INSTAGRAM SECTION */
+
+#instagram-box {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  text-align: center;
+  background-image: linear-gradient(#fff0ee 0%, mistyrose 20%, mistyrose 80%, #fff0ee);
+}
+
+#instagram-box h2 {
+  font-size: var(--big-font);
+}
+
+#instagram-picture-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#instagram-picture-1 {
+  border: solid;
+  aspect-ratio: 1;
+  width: 80%;
+  margin-top: 5rem;
+}
+
+#instagram-picture-2 {
+  border: solid;
+  aspect-ratio: 0.75;
+  width: 50%;
+  margin-top: 5rem;
+}
+
+#instagram-picture-3 {
+  border: solid;
+  aspect-ratio: 2;
+  width: 90%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 700px) {
+
+  #instagram-box h2 {
+    font-size: var(--bigger-font);
+  }
+
+}
+
+@media (min-width: 1000px) {
+  
+  /* Instagram Box */
+  #instagram-box {
+    border: none;
+    height: auto;
+    margin-bottom: 5rem;
+    margin-top: 7rem;
+    }
+    
+    #instagram-picture-1,
+    #instagram-picture-2,
+    #instagram-picture-3 {
+    display: none;
+    }
+    
+    #instagram-picture-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+    }
+    
+    /* Photo Reel */
+    .photo-reel {
+    display: block;
+    border: solid;
+    width: 10%;
+    aspect-ratio: 1;
+    }
+}
+
+/*~~~~~~~~~~~~~ About Page ~~~~~~~~~~~~~~~~*/
 
 #about-content-wrapper {
   width: 100%;
@@ -1106,6 +1232,8 @@
   }
 
 }
+
+/* ~~~~~~~~~~~~~~~~ Contact Page ~~~~~~~~~~~~~~~ */
 
 /* Parts of code taken from https://github.com/sefyudem/Contact-Us-Form/blob/master/style.css */
 

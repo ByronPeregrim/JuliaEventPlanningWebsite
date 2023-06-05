@@ -769,10 +769,6 @@ a {
   background-image: linear-gradient(#fff0ee 0%, mistyrose 20%, mistyrose 80%, #fff0ee);
 }
 
-.photo-reel {
-  display: none;
-}
-
 @media (min-width: 1000px) {
   
   .photo-box {
@@ -1107,7 +1103,11 @@ a {
   margin-bottom: 5rem;
 }
 
-@media (min-width: 700px) {
+.photo-reel {
+  display: none;
+}
+
+@media (min-width: 550px) {
 
   #instagram-box h2 {
     font-size: var(--bigger-font);
@@ -1123,29 +1123,28 @@ a {
     height: auto;
     margin-bottom: 5rem;
     margin-top: 7rem;
-    }
+  }
     
-    #instagram-picture-1,
-    #instagram-picture-2,
-    #instagram-picture-3 {
+  #instagram-picture-1,
+  #instagram-picture-2,
+  #instagram-picture-3 {
     display: none;
-    }
+  }
     
-    #instagram-picture-box {
+  #instagram-picture-box {
     display: flex;
     flex-direction: row;
     width: 100%;
     margin-top: 3rem;
     justify-content: space-evenly;
-    }
-    
-    /* Photo Reel */
-    .photo-reel {
+  }
+
+  .photo-reel {
     display: block;
     border: solid;
     width: 10%;
     aspect-ratio: 1;
-    }
+  }
 }
 
 /*~~~~~~~~~~~~~ About Page ~~~~~~~~~~~~~~~~*/
@@ -1164,7 +1163,7 @@ a {
   max-width: 750px;
 }
 
-#about-header {
+#about-content h2 {
   align-self: flex-start;
 }
 
@@ -1215,9 +1214,9 @@ a {
     width: 120%;
   }
 
-  #about-header {
+  #about-content h2 {
     grid-area: 1 / 1 / 2 / 2;
-    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
 
   #about-text-1 {
@@ -1375,7 +1374,7 @@ label {
   width: 98%;
 }
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 900px){
 
   label {
     width: 30%;

@@ -359,16 +359,22 @@
   --biggest-font: calc(16px*1.618*1.618*1.618);
 }
 
+/* Fonts */
+
+@font-face {
+  font-family: logoFont;
+  src: url(fonts/Frunchy.ttf);
+}
+
 /* Global styles */
 
 * {
   font-size: 16px;
-  font-family: Helvetica;
   color: dimgray;
 }
 
 body {
-  background-color: #fff0ee;
+  background-color: #f8e3e3;
 }
 
 h2 {
@@ -376,8 +382,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
-h1 {
-  font-size: var(--bigger-font)
+h1,
+h2 {
+  font-family: logoFont;
+  color: #a4936b;
 }
 
 li {
@@ -579,7 +587,7 @@ button {
   .dropdown_hover {
     display: inline-block;
     border: none;
-    background: #fff0ee;
+    background: #f8e3e3;
   }
 
   .dropdown_hover:hover {
@@ -643,7 +651,7 @@ button {
 #footer-box {
   height: 10rem;
   display: flex;
-  border-top: solid;
+  border-top: solid 1px;
 }
 
 #footer-right-box,
@@ -704,20 +712,24 @@ button {
 }
 
 .homepage-banner-box h1{
-  width: 10rem;
+  width: auto;
   text-align: center;
-  font-size: var(--big-font);
+  font-size: var(--bigger-font);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 700px) {
+  .homepage-banner-box h1{
+    width: auto;
+    font-size: var(--biggest-font);
+  }
 }
 
 @media (min-width: 900px) {
 
   .homepage-banner-logo {
     width: 7.5rem;
-  }
-
-  .homepage-banner-box h1{
-    width: auto;
-    font-size: var(--bigger-font);
   }
 
   .homepage-banner-box {
@@ -770,7 +782,7 @@ button {
   min-width: 300px;
   margin-left: 5px;
   padding-top: 3rem;
-  background-image: linear-gradient(#fff0ee 0%, mistyrose 20%, mistyrose 80%, #fff0ee);
+  background-image: linear-gradient(#f8e3e3 0%, #fff0ee 20%, #fff0ee 80%, #f8e3e3);
 }
 
 @media (min-width: 1000px) {
@@ -798,7 +810,7 @@ button {
 }
 
 #top-right-photo-box {
-  border: solid;
+  border: solid 1px;
   grid-area: 1 / 4 / 6 / 8;
   background-image: url(images/wedding-photo-2.jpeg);
   background-repeat: no-repeat;
@@ -806,7 +818,7 @@ button {
 }
 
 #bottom-left-photo-box {
-  border: solid;
+  border: solid 1px;
   grid-area: 4 / 1 / 8 / 6;
   z-index: 0;
   background-image: url(images/STOCK-wedding-couple-1.jpg);
@@ -918,7 +930,7 @@ button {
 #social-events-photos div {
   background-repeat: no-repeat;
   background-size:cover;
-  border: solid;
+  border: solid 1px;
 }
 
 #social-events-text-box {
@@ -999,7 +1011,7 @@ button {
 }
 
 .corporate-photo {
-  border: solid;
+  border: solid 1px;
 }
 
 #corporate-photo-left {
@@ -1073,7 +1085,7 @@ button {
   margin-top: 3rem;
   padding-top: 1rem;
   text-align: center;
-  background-image: linear-gradient(#fff0ee 0%, mistyrose 20%, mistyrose 80%, #fff0ee);
+  background-image: linear-gradient(#f8e3e3 0%, #fff0ee 20%, #fff0ee 80%, #f8e3e3);
 }
 
 #instagram-box h2 {
@@ -1088,21 +1100,21 @@ button {
 }
 
 #instagram-picture-1 {
-  border: solid;
+  border: solid 1px;
   aspect-ratio: 1;
   width: 80%;
   margin-top: 5rem;
 }
 
 #instagram-picture-2 {
-  border: solid;
+  border: solid 1px;
   aspect-ratio: 0.75;
   width: 50%;
   margin-top: 5rem;
 }
 
 #instagram-picture-3 {
-  border: solid;
+  border: solid 1px;
   aspect-ratio: 2;
   width: 90%;
   margin-top: 5rem;
@@ -1147,7 +1159,7 @@ button {
 
   .photo-reel {
     display: block;
-    border: solid;
+    border: solid 1px;
     width: 10%;
     aspect-ratio: 1;
   }
@@ -1181,7 +1193,7 @@ button {
 #about-picture-box {
   width: 80%;
   aspect-ratio: 1;
-  border: solid;
+  border: solid 1px;
   margin: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 25%);

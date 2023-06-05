@@ -389,6 +389,10 @@ a {
   padding: 15px;
 }
 
+button {
+  width: fit-content;
+}
+
 @media (max-width: 400px) {
   li {
     font-size: 11px;
@@ -827,8 +831,9 @@ a {
   }
     
   #top-left-text button {
-    justify-self: center;
+    align-self: center;
     margin-top: 1.5rem;
+    width: 12rem;
   }
 
   #home-wedding-photos {
@@ -984,11 +989,13 @@ a {
 
 #corporate-events-photos-box {
   aspect-ratio: 1.25;
-  width: 95%;
+  width: 90%;
   max-width: 50rem;
   display: grid;
   grid-template-columns: repeat(20, 5%);
   grid-template-rows: (50, 2%);
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .corporate-photo {
@@ -1031,7 +1038,6 @@ a {
 }
 
 #desktop-corporate-text button {
-  width: 45%;
   margin-top: 1rem;
 }
 
@@ -1047,7 +1053,7 @@ a {
     justify-content: center;
     margin-left: 2rem;
     margin-right: 1rem;
-    width: 30rem;
+    width: 29rem;
   }
   
   #corporate-photo-box {

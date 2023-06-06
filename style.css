@@ -478,7 +478,7 @@ button {
 
 .mobile-menu {
   position: absolute;
-  top: 65px;
+  top: 49px;
   width: 100%;
   background-color: var(--tea-rose);
   opacity: 97%;
@@ -494,7 +494,7 @@ button {
   justify-content: flex-start;
   padding-top: 10px;
   z-index: 10;
-  transition: 1s;
+  transition: .5s;
 }
 
 .mobile-menu .mobile-menu-selection {
@@ -507,7 +507,13 @@ button {
 .mobile-menu .mobile-menu-selection:hover {
   transform: scale(1.1);
   transition: 0.3s;
-} 
+}
+
+#mobile-menu-contact-selection {
+  border: var(--tiffany-blue) solid thin;
+  border-radius: 10px;
+  color: var(--tiffany-blue);
+}
 
 .service-open .mobile-menu .mobile-menu-selection {
   display: none;

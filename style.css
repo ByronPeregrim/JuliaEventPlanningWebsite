@@ -369,8 +369,13 @@ template {
 /* Fonts */
 
 @font-face {
-  font-family: logoFont;
+  font-family: frunchy;
   src: url(fonts/Frunchy.ttf);
+}
+
+@font-face {
+  font-family: nunito;
+  src: url(fonts/Nunito-VariableFont_wght.ttf);
 }
 
 /* Global styles */
@@ -378,7 +383,7 @@ template {
 * {
   font-size: 16px;
   color: var(--charcoal);
-  font-family: Helvetica;
+  font-family: nunito;
 }
 
 body {
@@ -388,11 +393,12 @@ body {
 h2 {
   font-size: var(--biggest-font);
   margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px white;
 }
 
 h1,
 h2 {
-  font-family: logoFont;
+  font-family: frunchy;
   color: var(--charcoal);
 }
 
@@ -403,20 +409,51 @@ li {
 a {
   text-decoration: none;
   padding: 15px;
-  font-family: logoFont;
+  font-family: frunchy;
   font-size: 28px;
 }
 
-button {
-  width: fit-content;
-  background-color: var(--tiffany-blue);
-  border-radius: 20px;
+button:not(.dropdown_hover) {
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  border-color: #000;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  padding: 13px 26px;
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+  transition: 0.1s var(--mimi-pink) linear, 0.1s color linear;
+  border-radius: 3px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  appearance: none;
+  line-height: normal;
+  align-self: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1);
+}
+
+button:hover:not(.dropdown_hover) {
+  background-color: var(--charcoal);
+  color: white;
+  transition: .15s;
 }
 
 @media (max-width: 400px) {
   li {
     font-size: 11px;
   }
+}
+
+.image,
+.photo-reel {
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1);
 }
 
 /* ~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~*/
@@ -509,10 +546,15 @@ button {
   transition: 0.3s;
 }
 
-#mobile-menu-contact-selection {
-  border: var(--tiffany-blue) solid thin;
+#mobile-menu-contact-selection a {
+  border: var(--charcoal) solid;
   border-radius: 10px;
-  color: var(--tiffany-blue);
+  padding: 5px 15px;
+}
+
+#mobile-menu-contact-selection a:hover {
+  color: white;
+  background-color: var(--charcoal);
 }
 
 .service-open .mobile-menu .mobile-menu-selection {
@@ -569,6 +611,21 @@ button {
   text-decoration: underline;
 }
 
+.contact-button {
+  background-color: var(--tiffany-blue);
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: solid 1.5px;
+  box-shadow: 1px 1px 2px var(--charcoal);
+}
+
+.contact-button:hover {
+  background-color: #69c4b6;
+  transform: scale(1.1);
+  transition: .1s;
+  padding: 6px 21px;
+}
+
 @media (min-width: 900px) {
 
   /* Sticky Header */
@@ -586,7 +643,7 @@ button {
   .desktop-menu-left,
   .desktop-menu-right {
     height: 5rem;
-    width: 25rem;
+    width: 24rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -604,18 +661,6 @@ button {
     padding: 3px 15px 3px 15px;
   }
 
-  #menu-selection-contact {
-    background-color: var(--tiffany-blue);
-    border-radius: 20px;
-    padding: 5px 20px 5px 20px;
-    border: solid 1.5px;
-    box-shadow: 1px 1px 2px var(--charcoal);
-  }
-
-  #menu-selection-contact:hover {
-    background-color: #69c4b6;
-  }
-
   /* Dropdown Menu */
 
   .dropdown {
@@ -628,7 +673,7 @@ button {
     display: inline-block;
     border: none;
     background: whitesmoke;
-    font-family: logoFont;
+    font-family: frunchy;
     font-size: 26px;
     font-weight: bold;
   }
@@ -706,12 +751,16 @@ button {
 
 #footer-left-box div {
   text-align: center;
-  margin-right: .5rem;
   font-size: var(--big-font);
 }
 
-#footer-left-box button {
+#footer-left-box .contact-button {
   margin-top: 10px;
+  font-family: nunito;
+  font-size: var(--font);
+  text-align: center;
+  transform: scale(1.1);
+  transition: .1s;
 }
 
 #footer-right-box ul {
@@ -752,6 +801,7 @@ button {
   height: auto;
   width: 10rem;
   margin-top: 1rem;
+  pointer-events: none;
 }
 
 .homepage-banner-logo:hover {
@@ -764,21 +814,28 @@ button {
   width: auto;
   text-align: center;
   font-size: var(--bigger-font);
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem;
+  text-shadow: 1px 1px 2px var(--mimi-pink);
+  
 }
 
 @media (min-width: 650px) {
   .homepage-banner-box h1{
-    width: auto;
     font-size: var(--biggest-font);
+  }
+
+  .homepage-banner-logo {
+    pointer-events: all;
   }
 }
 
 @media (min-width: 900px) {
+  .homepage-banner-box h1{
+    font-size: calc(1.618*var(--biggest-font));
+  }
 
   .homepage-banner-logo {
     width: 7.5rem;
-    filter: hue-rotate(100%);
   }
 
   .homepage-banner-box {
@@ -794,19 +851,16 @@ button {
 .service-box {
   display: flex;
   flex-direction: column;
-  margin: 3rem 1rem 3rem 1rem;
+  margin: 3rem 1rem;
   justify-content: center;
-}
-
-.service-box button {
-  margin-top: 1rem;
-  width: fit-content;
-  padding: 6px;
-  border-radius: 5px;
 }
 
 .service-box h2 {
   font-size: var(--bigger-font);
+}
+
+.service-box button {
+  margin-top: 1rem;
 }
 
 @media (min-width: 1000px) {
@@ -814,12 +868,6 @@ button {
   .service-box {
     display: none;
   }
-
-  /* Service Button */
-  .service-box button {
-    width: 50%;
-    align-self: center;
-    }
   
 }
 
@@ -894,9 +942,7 @@ button {
   }
     
   #top-left-text button {
-    align-self: center;
-    margin-top: 1.5rem;
-    width: 12rem;
+    margin-top: 1rem;
   }
 
   #home-wedding-photos {
@@ -909,18 +955,20 @@ button {
     
   #top-right-photo-box {
     grid-area: 1 / 9 / 12 / 18;
+    z-index: 2;
   }
     
   #bottom-left-photo-box {
     grid-area: 9 / 1 / 18 / 12;
+    z-index: 2;
   }
 
 }
 
-@media (min-width: 700px) {
+@media (min-width: 730px) {
 
-  #top-left-text {
-    grid-area: 2 / 2 / 7 / 8;
+  #top-left-text button {
+    margin-top: 1.5rem;
   }
 
 }
@@ -939,7 +987,7 @@ button {
   #top-left-text {
     display: flex;
     flex-direction: column;
-    grid-area: 1 / 1 / 7 / 8;
+    grid-area: 1 / 1 / 8 / 8;
   }
 
   #top-left-text h2 {
@@ -952,7 +1000,7 @@ button {
   
   #top-left-text button {
     justify-self: center;
-    margin-top: 2rem;
+    width: auto;
   }
   
   #top-right-photo-box {
@@ -1044,11 +1092,6 @@ button {
     font-size: var(--font);
   }
 
-  #social-events-text-box button {
-    width: 50%;
-    align-self: center;
-  }
-  
   #social-events-photos {
     width: 50%;
     max-width: 40rem;
@@ -1094,7 +1137,6 @@ button {
   background-image: url(images/corporate-3.jpg);
   background-repeat: no-repeat;
   background-size:cover;
-  
 }
 
 #desktop-corporate-text {
@@ -1168,25 +1210,68 @@ button {
   aspect-ratio: 1;
   width: 80%;
   margin-top: 5rem;
+  background-image: url(images/photo-reel-4.jpeg);
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 #instagram-picture-2 {
   border: solid 1px;
   aspect-ratio: 0.75;
-  width: 50%;
-  margin-top: 5rem;
+  width: 60%;
+  margin-top: 3rem;
+  background-image: url(images/photo-reel-2.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 #instagram-picture-3 {
   border: solid 1px;
   aspect-ratio: 2;
   width: 90%;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 5rem;
+  background-image: url(images/photo-reel-5.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .photo-reel {
   display: none;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+#photo-1 {
+  background-image: url(images/photo-reel-1.jpeg);
+}
+
+#photo-2 {
+  background-image: url(images/photo-reel-2.jpg);
+}
+
+#photo-3 {
+  background-image: url(images/photo-reel-3.jpeg);
+}
+
+#photo-4 {
+  background-image: url(images/photo-reel-4.jpeg);
+}
+
+#photo-5 {
+  background-image: url(images/photo-reel-5.jpg);
+}
+
+#photo-6 {
+  background-image: url(images/photo-reel-6.jpeg);
+}
+
+#photo-7 {
+  background-image: url(images/photo-reel-7.jpg);
+}
+
+#photo-8 {
+  background-image: url(images/photo-reel-8.jpeg);
 }
 
 @media (min-width: 550px) {

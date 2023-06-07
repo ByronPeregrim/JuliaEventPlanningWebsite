@@ -10,66 +10,64 @@
 </head>
 <body>
     <header>
-        <div class="sticky-header-box">
+        <div class="sticky-header">
             <a href="index.html">
-                <img class="sticky-header-logo" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
-           </a>
-           <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-              <li class="mobile-menu-selection"><a href="index.html">Home</a></li>
-              <li class="mobile-menu-selection"><a onclick="event.stopPropagation(); toggleServiceMenu()">Services ></a></li>
-              <li id="service-menu">
-                <ul>
-                    <li><a onclick="serviceMenuBack()" href="#">< Back</a></li>
-                    <li><a href="weddings.html">Weddings</a></li>
-                    <li><a href="social-events.html">Social Events</a></li>
-                    <li><a class="selected-menu-item" href="corporate-events.html">Corporate Events</a></li>
+                <img src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
+            </a>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="menu--mobile">
+                  <li class="menu--mobile__selection"><a href="index.html">Home</a></li>
+                  <li class="menu--mobile__selection"><a onclick="event.stopPropagation(); toggleServiceMenu()">Services ></a></li>
+                  <li id="menu--mobile__selection--services">
+                    <ul>
+                        <li><a onclick="serviceMenuBack()" href="#">< Back</a></li>
+                        <li><a href="weddings.html">Weddings</a></li>
+                        <li><a href="social-events.html">Social Events</a></li>
+                        <li><a class="selected-menu-item" href="corporate-events.html">Corporate Events</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu--mobile__selection"><a href="about.html">About</a></li>
+                  <li class="menu--mobile__selection"><a href="gallery.html">Gallery</a></li>
+                  <li class="menu--mobile__selection"><a href="testimonials.html">Testimonials</a></li>
+                  <li id="menu--mobile__selection--contact" class="menu--mobile__selection"><a href="contact.html">Contact</a></li>
                 </ul>
-              </li>
-              <li class="mobile-menu-selection"><a href="about.html">About</a></li>
-              <li class="mobile-menu-selection"><a href="gallery.html">Gallery</a></li>
-              <li class="mobile-menu-selection"><a href="testimonials.html">Testimonials</a></li>
-              <li id="mobile-menu-contact-selection" class="mobile-menu-selection"><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
+            </div> 
         </div>
-    
-        <div id="non-homepage-banner-box" class="homepage-banner-box">
-            <div class="desktop-menu-box">
-                <div class="desktop-menu-left">
+        <div id="banner--non-homepage" class="banner">
+            <div class="menu--desktop">
+                <div class="menu--desktop__left">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <div class="dropdown">
-                        <button class="dropdown_hover">Services</button>
-                        <div class="dropdown_menu">
+                        <button class="dropdown--hover">Services</button>
+                        <div class="dropdown__menu">
                             <a href="weddings.html">Weddings</a>
                             <a href="social-events.html">Social Events</a>
-                            <a class="selected-menu-item" href="corporate-events.html">Corporate Events</a>
+                            <a href="corporate-events.html">Corporate Events</a>
                         </div>
                     </div>
                 </div>
-                <img id="non-homepage-banner-logo" class="homepage-banner-logo" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning" onclick="document.location='index.html'">
-                <div class="desktop-menu-right">
+                <img src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning" onclick="document.location='index.html'">
+                <div class="menu--desktop__right">
                     <a href="gallery.html">Gallery</a>
                     <a href="testimonials.html">Testimonials</a>
                     <a class="contact-button" href="contact.html">Contact</a>
                 </div>
             </div>
-            <h1 id="non-homepage-banner-text" class="homepage-banner-text">Julia Rose Event Planning Co.</h1>
+            <h1 id="banner__text--non-homepage">Julia Rose Event Planning Co.</h1>
         </div>
-    
     </header>
     
-    <div id="footer-box">
-        <div id="footer-left-box">
-            <div id="contact-text">Visit my Contact page and send me a message!</div>
+    <div id="footer">
+        <div id="footer__left">
+            <div >Contact Me!</div>
             <a class="contact-button" href="contact.html">Click Here!</a>
         </div>
-        <div id="footer-right-box">
-            <ul id="contact-info-list">
+        <div id="footer__right">
+            <ul>
                 <li>Julia Rose Event Planning</li>
                 <li>Saratoga Springs, New York</li>
                 <li>Phone: (518) 506-7796</li>

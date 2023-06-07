@@ -413,7 +413,7 @@ a {
   font-size: 28px;
 }
 
-button:not(.dropdown_hover, .btn) {
+button:not(.dropdown--hover, .btn) {
   font-size: 11px;
   font-weight: 600;
   font-style: normal;
@@ -436,7 +436,7 @@ button:not(.dropdown_hover, .btn) {
   box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1);
 }
 
-button:hover:not(.dropdown_hover, .btn) {
+button:hover:not(.dropdown--hover, .btn) {
   background-color: var(--charcoal);
   color: white;
   transition: .15s;
@@ -455,13 +455,38 @@ button:hover:not(.dropdown_hover, .btn) {
 
 /* ~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~*/
 
-#service-menu {
+#menu--mobile__selection--services {
   display: none;
+}
+
+.menu--desktop__left,
+.menu--desktop__right {
+  display: none;
+}
+
+.selected-menu-item {
+  text-underline-position: under;
+  text-decoration: underline;
+}
+
+.contact-button {
+  background-color: var(--tiffany-blue);
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: solid 1.5px;
+  box-shadow: 1px 1px 2px var(--charcoal);
+}
+
+.contact-button:hover {
+  background-color: #69c4b6;
+  transform: scale(1.1);
+  transition: .1s;
+  padding: 6px 21px;
 }
 
 /* Sticky Header */
 
-.sticky-header-box {
+.sticky-header {
   height: 4rem;
   border-bottom: solid;
   border-bottom-width: thin;
@@ -476,7 +501,7 @@ button:hover:not(.dropdown_hover, .btn) {
   background-image: linear-gradient(var(--mimi-pink) 10%, whitesmoke 100%, whitesmoke 50%, whitesmoke);
 }
 
-.sticky-header-box a img {
+.sticky-header a img {
   height: 3.5rem;
   margin-top: .5rem;
 }
@@ -510,17 +535,21 @@ button:hover:not(.dropdown_hover, .btn) {
   transform: rotate(45deg) translate(-6px, -8px);
 }
 
-.mobile-menu {
+/* Mobile Menu */
+
+.menu--mobile {
+  display: none;
   position: absolute;
   top: 49px;
   width: 100%;
   background-color: var(--tea-rose);
   opacity: 97%;
   height: 23rem;
+  margin-right: 20px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 }
 
-.open .mobile-menu {
+.open .menu--mobile {
   left: 0;
   display: flex;
   flex-direction: column;
@@ -528,41 +557,45 @@ button:hover:not(.dropdown_hover, .btn) {
   justify-content: flex-start;
   padding-top: 10px;
   z-index: 10;
-  transition: .5s;
 }
 
-.mobile-menu .mobile-menu-selection {
+.menu--mobile .menu--mobile__selection {
   margin-bottom: 10px;
   margin-right: 79px;
   padding: 5px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-.mobile-menu .mobile-menu-selection:hover {
+.menu--mobile  li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu--mobile .menu--mobile__selection:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
 
-#mobile-menu-contact-selection a {
+#menu--mobile__selection--contact a {
   border: var(--charcoal) solid;
   border-radius: 10px;
-  padding: 5px 15px;
+  padding: 7px 15px;
 }
 
-#mobile-menu-contact-selection a:hover {
+#menu--mobile__selection--contact a:hover {
   color: white;
   background-color: var(--charcoal);
 }
 
-.service-open .mobile-menu .mobile-menu-selection {
+.service-open .menu--mobile .menu--mobile__selection {
   display: none;
 }
 
-.service-open .mobile-menu #service-menu {
+.service-open .menu--mobile #menu--mobile__selection--services {
   display: block;
 }
 
-#service-menu ul {
+#menu--mobile__selection--services ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -573,72 +606,34 @@ button:hover:not(.dropdown_hover, .btn) {
   width: 100%;
 }
 
-#service-menu ul li {
+#menu--mobile__selection--services ul li {
   margin-bottom: 10px;
   padding: 5px;
   margin-right: 118px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-#service-menu ul li:hover {
+#menu--mobile__selection--services ul li:hover {
   transform: scale(1.1);
   transition: 0.3s;
-}
-
-.desktop-menu-left,
-.desktop-menu-right {
-  display: none;
-}
-
-/* Mobile Menu */
-
-.mobile-menu  li {
-  text-decoration: none;
-  list-style: none;
-}
-
-.mobile-menu {
-  display: none;
-  float: right;
-  margin-right: 20px;
-}
-
-.selected-menu-item {
-  text-underline-position: under;
-  text-decoration: underline;
-}
-
-.contact-button {
-  background-color: var(--tiffany-blue);
-  border-radius: 20px;
-  padding: 5px 20px;
-  border: solid 1.5px;
-  box-shadow: 1px 1px 2px var(--charcoal);
-}
-
-.contact-button:hover {
-  background-color: #69c4b6;
-  transform: scale(1.1);
-  transition: .1s;
-  padding: 6px 21px;
 }
 
 @media (min-width: 900px) {
 
   /* Sticky Header */
 
-  .sticky-header-box {
+  .sticky-header {
     display: none;
   }
       
   /* Desktop Menu */
-  .desktop-menu-box {
+  .menu--desktop {
     display:flex;
     align-items: center;
   }
     
-  .desktop-menu-left,
-  .desktop-menu-right {
+  .menu--desktop__left,
+  .menu--desktop__right {
     height: 5rem;
     width: 24rem;
     display: flex;
@@ -666,7 +661,7 @@ button:hover:not(.dropdown_hover, .btn) {
     z-index: 10;
   }
 
-  .dropdown_hover {
+  .dropdown--hover {
     display: inline-block;
     border: none;
     background: whitesmoke;
@@ -675,7 +670,7 @@ button:hover:not(.dropdown_hover, .btn) {
     font-weight: bold;
   }
 
-  .dropdown_menu {
+  .dropdown__menu {
     position: absolute;
     display: none;
     top: 100%;
@@ -685,11 +680,11 @@ button:hover:not(.dropdown_hover, .btn) {
     box-shadow: 0 3px 2px rgba(0,0,0,0.3);
   }
 
-  .dropdown:hover .dropdown_menu {
+  .dropdown:hover .dropdown__menu {
     display: block;
   }
 
-  .dropdown_menu a {
+  .dropdown__menu a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -697,7 +692,7 @@ button:hover:not(.dropdown_hover, .btn) {
     border-top: solid 1px #e0e0e0;
   }
 
-  .dropdown_menu a:hover {
+  .dropdown__menu a:hover {
     background: #42465128;
   }
 
@@ -705,21 +700,13 @@ button:hover:not(.dropdown_hover, .btn) {
 
 /*Non-Homepage Header*/
 
-#non-homepage-banner-box {
+#banner--non-homepage {
   height: 13rem;
 }
 
-#non-homepage-banner-logo {
-  width: 5rem;
-}
+@media (min-width: 650px) {
 
-@media (min-width: 900px) {
-
-  #non-homepage-banner-logo {
-    width: 7.5rem;
-  }
-
-  #non-homepage-banner-text {
+  #banner__text--non-homepage {
     font-size: var(--bigger-font);
   }
 
@@ -727,15 +714,15 @@ button:hover:not(.dropdown_hover, .btn) {
 
 /* ~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~*/
 
-#footer-box {
+#footer {
   height: 10rem;
   display: flex;
   border-top: solid 1px;
   box-shadow: 0 0 0 rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1);
 }
 
-#footer-right-box,
-#footer-left-box {
+#footer__right,
+#footer__left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -743,28 +730,28 @@ button:hover:not(.dropdown_hover, .btn) {
   width: 50%;
 }
 
-#footer-left-box {
+#footer__left {
   flex-direction: column;
 }
 
-#footer-left-box div {
+#footer__left div {
   text-align: center;
   font-size: var(--big-font);
 }
 
-#footer-left-box .contact-button {
+#footer__left .contact-button {
   margin-top: 10px;
   font-family: nunito;
   font-size: var(--font);
   text-align: center;
 }
 
-#footer-left-box .contact-button:hover {
+#footer__left .contact-button:hover {
   transform: scale(1.1);
   transition: .1s;
 }
 
-#footer-right-box ul {
+#footer__right ul {
   list-style: none;
   margin-left: -20%;
 }
@@ -774,7 +761,7 @@ button:hover:not(.dropdown_hover, .btn) {
 }
 
 @media (min-width: 1000px) {
-  #footer-right-box ul li {
+  #footer__right ul li {
     font-size: 18px;
   }
 
@@ -784,7 +771,7 @@ button:hover:not(.dropdown_hover, .btn) {
 
 /* Homepage Banner */
 
-.homepage-banner-box {
+.banner {
   padding-top: 5rem;
   height: 40rem;
   display: flex;
@@ -798,20 +785,20 @@ button:hover:not(.dropdown_hover, .btn) {
   box-shadow: 0 0 20px 20px whitesmoke inset;
 }
 
-.homepage-banner-logo {
+.menu--desktop img {
   height: auto;
   width: 10rem;
   margin-top: 1rem;
   pointer-events: none;
 }
 
-.homepage-banner-logo:hover {
+.menu--desktop img:hover {
   transform: scale(1.1);
   transition: 0.3s;
   cursor: pointer;
 }
 
-.homepage-banner-box h1{
+.banner h1{
   width: auto;
   text-align: center;
   font-size: var(--bigger-font);
@@ -819,7 +806,7 @@ button:hover:not(.dropdown_hover, .btn) {
   text-shadow: 1px 1px 2px var(--mimi-pink);
 }
 
-.homepage-banner-box:not(#non-homepage-banner-box, #contact-page-banner-box) h1 {
+.banner:not(#banner--non-homepage, #banner--contact) h1 {
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -852,25 +839,27 @@ button:hover:not(.dropdown_hover, .btn) {
   
 
 @media (min-width: 650px) {
-  .homepage-banner-box h1{
+
+  .banner h1{
     font-size: var(--biggest-font);
   }
 
-  .homepage-banner-logo {
+  .menu--desktop img {
     pointer-events: all;
   }
 }
 
 @media (min-width: 900px) {
-  .homepage-banner-box h1{
+
+  .banner h1{
     font-size: calc(1.618*var(--biggest-font));
   }
 
-  .homepage-banner-logo {
+  .menu--desktop img {
     width: 7.5rem;
   }
 
-  .homepage-banner-box {
+  .banner {
     padding-top: 1rem;
     height: 45rem;
     margin-bottom: 2rem;
@@ -880,24 +869,24 @@ button:hover:not(.dropdown_hover, .btn) {
 
 /* Service Box */
 
-.service-box {
+.service-info--mobile {
   display: flex;
   flex-direction: column;
   margin: 3rem 1rem;
   justify-content: center;
 }
 
-.service-box h2 {
+.service-info--mobile h2 {
   font-size: var(--bigger-font);
 }
 
-.service-box button {
+.service-info--mobile button {
   margin-top: 1rem;
 }
 
 @media (min-width: 1000px) {
 
-  .service-box {
+  .service-info--mobile {
     display: none;
   }
   
@@ -927,7 +916,7 @@ button:hover:not(.dropdown_hover, .btn) {
 
 /* WEDDING SECTION */
 
-#home-wedding-photos {
+#wedding {
   aspect-ratio: 1;
   width: 95%;
   display: grid;
@@ -935,11 +924,11 @@ button:hover:not(.dropdown_hover, .btn) {
   grid-template-rows: repeat(7, auto);
 }
 
-#top-left-text {
+#wedding-info--desktop {
   display: none;
 }
 
-#top-right-photo-box {
+#wedding__top-right-photo {
   border: solid 1px;
   grid-area: 1 / 4 / 6 / 8;
   background-image: url(images/wedding-photo-2.jpeg);
@@ -947,7 +936,7 @@ button:hover:not(.dropdown_hover, .btn) {
   background-size:cover;
 }
 
-#bottom-left-photo-box {
+#wedding__bottom-left-photo {
   border: solid 1px;
   grid-area: 4 / 1 / 8 / 6;
   z-index: 0;
@@ -958,26 +947,26 @@ button:hover:not(.dropdown_hover, .btn) {
 
 @media (min-width: 650px) {
 
-  #wedding-box {
+  #wedding-info--mobile {
     display: none;
   }
 
-  #top-left-text {
+  #wedding-info--desktop {
     display: flex;
     flex-direction: column;
     grid-area: 1 / 1 / 8 / 8;
   }
 
-  #top-left-text h2 {
+  #wedding-info--desktop h2 {
     margin-bottom: 0;
     margin-top: 0;
   }
     
-  #top-left-text button {
+  #wedding-info--desktop button {
     margin-top: 1rem;
   }
 
-  #home-wedding-photos {
+  #wedding {
     grid-template-columns: repeat(17, 5%);
     grid-template-rows: repeat(17, 5%);
     width: auto;
@@ -985,11 +974,11 @@ button:hover:not(.dropdown_hover, .btn) {
     align-content: center;
   }
     
-  #top-right-photo-box {
+  #wedding__top-right-photo {
     grid-area: 1 / 9 / 12 / 18;
   }
     
-  #bottom-left-photo-box {
+  #wedding__bottom-left-photo {
     grid-area: 9 / 1 / 18 / 12;
   }
 
@@ -997,7 +986,7 @@ button:hover:not(.dropdown_hover, .btn) {
 
 @media (min-width: 730px) {
 
-  #top-left-text button {
+  #wedding-info--desktop button {
     margin-top: 1.5rem;
   }
 
@@ -1005,7 +994,7 @@ button:hover:not(.dropdown_hover, .btn) {
 
 @media (min-width: 800px) {
 
-  #top-left-text button {
+  #wedding-info--desktop button {
     margin-top: 2rem;
   }
 
@@ -1014,34 +1003,34 @@ button:hover:not(.dropdown_hover, .btn) {
 @media (min-width: 900px) {
 
   /* Wedding Photos */
-  #top-left-text {
+  #wedding-info--desktop {
     display: flex;
     flex-direction: column;
     grid-area: 1 / 1 / 8 / 8;
   }
 
-  #top-left-text h2 {
+  #wedding-info--desktop h2 {
     font-size: var(--biggest-font);
   }
 
-  #top-left-text div {
+  #wedding-info--desktop div {
     font-size: var(--big-font);
   }
   
-  #top-left-text button {
+  #wedding-info--desktop button {
     justify-self: center;
     width: auto;
   }
   
-  #top-right-photo-box {
+  #wedding__top-right-photo {
     grid-area: 1 / 9 / 12 / 18;
   }
   
-  #bottom-left-photo-box {
+  #wedding__bottom-left-photo {
     grid-area: 9 / 1 / 18 / 12;
   }
 
-  #home-wedding-photos {
+  #wedding {
     grid-template-columns: repeat(17, 3rem);
     grid-template-rows: repeat(17, 3rem);
     width: auto;
@@ -1051,7 +1040,7 @@ button:hover:not(.dropdown_hover, .btn) {
 
 /* SOCIAL EVENTS SECTION */
 
-#social-events-photos {
+#social-events__photos {
   aspect-ratio: 1;
   width: 95%;
   display: grid;
@@ -1059,13 +1048,13 @@ button:hover:not(.dropdown_hover, .btn) {
   grid-template-rows: repeat(21, auto);
 }
 
-#social-events-photos div {
+#social-events__photos div {
   background-repeat: no-repeat;
   background-size:cover;
   border: solid 1px;
 }
 
-#social-events-text-box {
+#social-events__text {
   display: none;
 }
 
@@ -1091,18 +1080,18 @@ button:hover:not(.dropdown_hover, .btn) {
 }
 
 @media (min-width: 650px) {
-  .service-box h2 {
+  .service-info--mobile h2 {
     font-size: var(--biggest-font);
   }
 }
 
 @media (min-width: 900px) {
 
-  #social-events-photo-box {
+  #social-events {
     margin-top: 5rem;
   }
   
-  #social-events-text-box {
+  #social-events__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1110,19 +1099,19 @@ button:hover:not(.dropdown_hover, .btn) {
     text-align: left;
   }
 
-  #social-events-text-box h2 {
+  #social-events__text h2 {
     font-size: var(--biggest-font);
   }
 
-  #social-events-text-box div {
+  #social-events__text div {
     font-size: var(--big-font);
   }
 
-  #social-events-text-box ul li {
+  #social-events__text ul li {
     font-size: var(--font);
   }
 
-  #social-events-photos {
+  #social-events__photos {
     width: 50%;
     max-width: 40rem;
     margin-left: 1rem;
@@ -1132,7 +1121,7 @@ button:hover:not(.dropdown_hover, .btn) {
 
 /* CORPORATE EVENTS SECTION */
 
-#corporate-events-photos-box {
+#corporate__photos {
   aspect-ratio: 1.25;
   width: 90%;
   max-width: 50rem;
@@ -1169,29 +1158,29 @@ button:hover:not(.dropdown_hover, .btn) {
   background-size:cover;
 }
 
-#desktop-corporate-text {
+#corporate__text {
   display: none;
 }
 
-#desktop-corporate-text h2 {
+#corporate__text h2 {
   font-size: var(--bigger-font);
 }
 
-#desktop-corporate-text div {
+#corporate__text div {
   font-size: var(--big-font);
 }
 
-#desktop-corporate-text button {
+#corporate__text button {
   margin-top: 1rem;
 }
 
 @media (min-width: 900px) {
 
-  .service-box {
+  .service-info--mobile {
     display: none;
   }
   
-  #desktop-corporate-text {
+  #corporate__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1200,11 +1189,11 @@ button:hover:not(.dropdown_hover, .btn) {
     width: 29rem;
   }
 
-  #desktop-corporate-text h2 {
+  #corporate__text h2 {
     font-size: var(--biggest-font);
   }
   
-  #corporate-photo-box {
+  #corporate {
     display: flex;
     margin-top: 5rem;
   }
@@ -1213,7 +1202,7 @@ button:hover:not(.dropdown_hover, .btn) {
 
 /* INSTAGRAM SECTION */
 
-#instagram-box {
+#instagram {
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1224,18 +1213,18 @@ button:hover:not(.dropdown_hover, .btn) {
   background-image: linear-gradient(whitesmoke 0%, var(--mimi-pink) 20%, var(--mimi-pink) 80%, whitesmoke);
 }
 
-#instagram-box h2 {
+#instagram h2 {
   font-size: var(--bigger-font);
 }
 
-#instagram-picture-box {
+#instagram__photos {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#instagram-picture-1 {
+#photo-1--mobile {
   border: solid 1px;
   aspect-ratio: 1;
   width: 80%;
@@ -1245,7 +1234,7 @@ button:hover:not(.dropdown_hover, .btn) {
   background-size:cover;
 }
 
-#instagram-picture-2 {
+#photo-2--mobile {
   border: solid 1px;
   aspect-ratio: 0.75;
   width: 60%;
@@ -1255,7 +1244,7 @@ button:hover:not(.dropdown_hover, .btn) {
   background-size:cover;
 }
 
-#instagram-picture-3 {
+#photo-3--mobile {
   border: solid 1px;
   aspect-ratio: 2;
   width: 90%;
@@ -1306,7 +1295,7 @@ button:hover:not(.dropdown_hover, .btn) {
 
 @media (min-width: 550px) {
 
-  #instagram-box h2 {
+  #instagram h2 {
     font-size: var(--biggest-font);
   }
 
@@ -1315,20 +1304,20 @@ button:hover:not(.dropdown_hover, .btn) {
 @media (min-width: 1000px) {
   
   /* Instagram Box */
-  #instagram-box {
+  #instagram {
     border: none;
     height: auto;
     margin-bottom: 5rem;
     margin-top: 7rem;
   }
     
-  #instagram-picture-1,
-  #instagram-picture-2,
-  #instagram-picture-3 {
+  #photo-1--mobile,
+  #photo-2--mobile,
+  #photo-3--mobile {
     display: none;
   }
     
-  #instagram-picture-box {
+  #instagram__photos {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -1351,14 +1340,14 @@ button:hover:not(.dropdown_hover, .btn) {
 
 /*~~~~~~~~~~~~~ About Page ~~~~~~~~~~~~~~~~*/
 
-#about-content-wrapper {
+#about-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
   background-image: linear-gradient(whitesmoke 0%, var(--mimi-pink) 20%, var(--mimi-pink) 80%, whitesmoke);
 }
 
-#about-content {
+#about {
   display: flex;
   flex-direction: column;
   margin: .5rem;
@@ -1366,15 +1355,15 @@ button:hover:not(.dropdown_hover, .btn) {
   max-width: 750px;
 }
 
-#about-content h2 {
+#about h2 {
   align-self: flex-start;
 }
 
-#about-text-1 {
+#about__text {
   text-align: center;
 }
 
-#about-picture-box {
+#about__photos {
   width: 80%;
   aspect-ratio: 1;
   border: solid 1px;
@@ -1385,7 +1374,7 @@ button:hover:not(.dropdown_hover, .btn) {
   box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1);
 }
 
-#about-picture-box div {
+#about__photos div {
   border: solid 1px;
 }
 
@@ -1419,7 +1408,7 @@ button:hover:not(.dropdown_hover, .btn) {
 
 @media (min-width: 900px) {
 
-  #about-content {
+  #about {
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(9, 11.1111%);
@@ -1427,18 +1416,18 @@ button:hover:not(.dropdown_hover, .btn) {
     margin: 4rem 5rem;
   }
 
-  #about-picture-box {
+  #about__photos {
     grid-area: 1 / 6 / 5 / 9;
     width: 120%;
   }
 
-  #about-content h2 {
+  #about h2 {
     grid-area: 1 / 1 / 1 / 1;
     margin-bottom: 1rem;
     margin-top: 0;
   }
 
-  #about-text-1 {
+  #about__text {
     grid-area: 2 / 1 / 4 / 6;
     text-align: left;
     margin-top: 1rem;
@@ -1447,37 +1436,37 @@ button:hover:not(.dropdown_hover, .btn) {
 }
 
 @media (min-width: 1000px) {
-  #about-text-1 {
+  #about__text {
     grid-area: 1 / 1 / 4 / 6;
     margin-top: 5rem;
   }
 }
 
 @media (min-width: 1100px) {
-  #about-content h2 {
+  #about h2 {
     grid-area: 2 / 1 / 2 / 1;
     margin-top: -1rem;
   }
-  #about-text-1 {
+  #about__text {
     grid-area: 3 / 1 / 4 / 6;
     margin-top: 1rem;
   }
 }
 
 @media (min-width: 1200px) {
-  #about-text-1 {
+  #about__text {
     margin-top: -2rem;
   }
 }
 
 @media (min-width: 1300px) {
 
-  #about-content h2 {
+  #about h2 {
     grid-area: 1 / 1 / 1 / 1;
     margin-top: 1rem;
   }
 
-  #about-text-1 {
+  #about__text {
     font-size: var(--big-font);
   }
 }
@@ -1486,7 +1475,7 @@ button:hover:not(.dropdown_hover, .btn) {
 
 /* Parts of code taken from https://github.com/sefyudem/Contact-Us-Form/blob/master/style.css */
 
-#contact-page-banner-box {
+#banner--contact {
   height: 13rem;
   box-shadow: 0 0 20px 20px whitesmoke inset;
 }
@@ -1615,7 +1604,7 @@ label {
   font-size: 17px;
 }
 
-#contact-page-sticky-header {
+#sticky-header--contact {
   position: relative;
 }
 
@@ -1637,7 +1626,7 @@ label {
     max-width: 650px;
   }
 
-  #contact-page-banner-box {
+  #banner--contact {
     display: none;
   }
 

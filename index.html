@@ -13,7 +13,7 @@
     
 
     <header>
-        <div class="sticky-header-box">
+        <div class="sticky-header">
             <a href="index.html">
                 <img src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
             </a>
@@ -21,10 +21,10 @@
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
-                <ul class="mobile-menu">
-                  <li class="mobile-menu-selection"><a class="selected-menu-item" href="index.html">Home</a></li>
-                  <li class="mobile-menu-selection"><a onclick="event.stopPropagation(); toggleServiceMenu()">Services ></a></li>
-                  <li id="service-menu">
+                <ul class="menu--mobile">
+                  <li class="menu--mobile__selection"><a class="selected-menu-item" href="index.html">Home</a></li>
+                  <li class="menu--mobile__selection"><a onclick="event.stopPropagation(); toggleServiceMenu()">Services ></a></li>
+                  <li id="menu--mobile__selection--services">
                     <ul>
                         <li><a onclick="serviceMenuBack()" href="#">< Back</a></li>
                         <li><a href="weddings.html">Weddings</a></li>
@@ -32,29 +32,29 @@
                         <li><a href="corporate-events.html">Corporate Events</a></li>
                     </ul>
                   </li>
-                  <li class="mobile-menu-selection"><a href="about.html">About</a></li>
-                  <li class="mobile-menu-selection"><a href="gallery.html">Gallery</a></li>
-                  <li class="mobile-menu-selection"><a href="testimonials.html">Testimonials</a></li>
-                  <li id="mobile-menu-contact-selection" class="mobile-menu-selection"><a href="contact.html">Contact</a></li>
+                  <li class="menu--mobile__selection"><a href="about.html">About</a></li>
+                  <li class="menu--mobile__selection"><a href="gallery.html">Gallery</a></li>
+                  <li class="menu--mobile__selection"><a href="testimonials.html">Testimonials</a></li>
+                  <li id="menu--mobile__selection--contact" class="menu--mobile__selection"><a href="contact.html">Contact</a></li>
                 </ul>
             </div> 
         </div>
-        <div class="homepage-banner-box">
-            <div class="desktop-menu-box">
-                <div class="desktop-menu-left">
+        <div class="banner">
+            <div class="menu--desktop">
+                <div class="menu--desktop__left">
                     <a class="selected-menu-item" href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <div class="dropdown">
-                        <button class="dropdown_hover">Services</button>
-                        <div class="dropdown_menu">
+                        <button class="dropdown--hover">Services</button>
+                        <div class="dropdown__menu">
                             <a href="weddings.html">Weddings</a>
                             <a href="social-events.html">Social Events</a>
                             <a href="corporate-events.html">Corporate Events</a>
                         </div>
                     </div>
                 </div>
-                <img class="homepage-banner-logo" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning" onclick="document.location='index.html'">
-                <div class="desktop-menu-right">
+                <img src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning" onclick="document.location='index.html'">
+                <div class="menu--desktop__right">
                     <a href="gallery.html">Gallery</a>
                     <a href="testimonials.html">Testimonials</a>
                     <a class="contact-button" href="contact.html">Contact</a>
@@ -65,7 +65,7 @@
     </header>
     
 
-    <div class="service-box" id="wedding-box">
+    <div class="service-info--mobile" id="wedding-info--mobile">
         <h2>Weddings</h2>
         <div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
@@ -75,33 +75,33 @@
     </div>
 
     <div class="photo-box">
-        <div id="home-wedding-photos">
-            <div id="top-left-text">
+        <div id="wedding">
+            <div id="wedding-info--desktop">
                 <h2>Weddings</h2>
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. </div>
                 <button onclick="document.location='weddings.html'">Weddings Page</button>
             </div>
-            <div class="image" id="bottom-left-photo-box"></div>
-            <div class="image" id="top-right-photo-box"></div>
+            <div class="image" id="wedding__bottom-left-photo"></div>
+            <div class="image" id="wedding__top-right-photo"></div>
         </div>
     </div>
     
 
-    <div class="service-box">
+    <div class="service-info--mobile">
         <h2>Social Events</h2>
         <div>Sed blandit libero volutpat sed. Amet commodo nulla facilisi nullam vehicula ipsum a arcu. Sed blandit libero volutpat sed. Amet commodo nulla facilisi nullam vehicula ipsum a arcu.</div>
         <button onclick="document.location='social-events.html'">Social Events Page</button>
     </div>
 
-    <div id="social-events-photo-box" class="photo-box">
-        <div id="social-events-photos">
+    <div class="photo-box" id="social-events">
+        <div id="social-events__photos">
             <div class="image" id="social-events-photo-top-left"></div>
             <div class="image" id="social-events-photo-top-right"></div>
             <div class="image" id="social-events-photo-bottom-left"></div>
             <div class="image" id="social-events-photo-bottom-right"></div>
         </div>
-        <div id="social-events-text-box">
+        <div id="social-events__text">
             <h2>Social Events</h2>
             <div>Amet commodo nulla facilisi nullam vehicula...</div>
             <ul>
@@ -117,49 +117,49 @@
     </div>
     
 
-    <div class="service-box">
+    <div class="service-info--mobile">
             <h2 >Corporate Events</h2>
             <div >Cursus sit amet dictum sit amet justo donec enim diam. Amet cursus sit amet dictum sit amet justo. Sed blandit libero volutpat sed. Amet commodo nulla facilisi nullam vehicula ipsum a arcu.</div>
             <button onclick="document.location='corporate-events.html'">Corporate Events Page</button>
     </div>
 
-    <div class="photo-box" id="corporate-photo-box">
-        <div id="desktop-corporate-text">
+    <div class="photo-box" id="corporate">
+        <div id="corporate__text">
             <h2>Corporate Events</h2>
             <div>Cursus sit amet dictum sit amet justo donec enim diam. Amet cursus sit amet dictum sit amet justo.</div>
-            <button class="service-button" onclick="document.location='corporate-events.html'">Corporate Events Page</button>
+            <button onclick="document.location='corporate-events.html'">Corporate Events Page</button>
         </div>
-        <div id="corporate-events-photos-box">
+        <div id="corporate__photos">
             <div class="image" class="corporate-photo" id="corporate-photo-left"></div>
             <div class="image" class="corporate-photo" id="corporate-photo-middle"></div>
             <div class="image" class="corporate-photo" id="corporate-photo-right"></div>
         </div>
     </div>
 
-    <div id="instagram-box">
+    <div id="instagram">
         <h2>Check out my Instagram!</h2>
-        <button id="instagram-button">Click Here!</button>
-        <div id="instagram-picture-box">
-            <div class="image" id="instagram-picture-1"></div>
-            <div class="image" id="instagram-picture-2"></div>
-            <div class="image" id="instagram-picture-3"></div>
-            <div id="photo-1" class="photo-reel"></div>
-            <div id="photo-2" class="photo-reel"></div>
-            <div id="photo-3" class="photo-reel"></div>
-            <div id="photo-4" class="photo-reel"></div>
-            <div id="photo-5" class="photo-reel"></div>
-            <div id="photo-6" class="photo-reel"></div>
-            <div id="photo-7" class="photo-reel"></div>
-            <div id="photo-8" class="photo-reel"></div>
+        <button>Click Here!</button>
+        <div id="instagram__photos">
+            <div class="image" id="photo-1--mobile"></div>
+            <div class="image" id="photo-2--mobile"></div>
+            <div class="image" id="photo-3--mobile"></div>
+            <div class="photo-reel" id="photo-1" ></div>
+            <div class="photo-reel" id="photo-2" ></div>
+            <div class="photo-reel" id="photo-3" ></div>
+            <div class="photo-reel" id="photo-4" ></div>
+            <div class="photo-reel" id="photo-5" ></div>
+            <div class="photo-reel" id="photo-6" ></div>
+            <div class="photo-reel" id="photo-7" ></div>
+            <div class="photo-reel" id="photo-8" ></div>
         </div>
     </div>
 
-    <div id="footer-box">
-        <div id="footer-left-box">
+    <div id="footer">
+        <div id="footer__left">
             <div >Contact Me!</div>
             <a class="contact-button" href="contact.html">Click Here!</a>
         </div>
-        <div id="footer-right-box">
+        <div id="footer__right">
             <ul>
                 <li>Julia Rose Event Planning</li>
                 <li>Saratoga Springs, New York</li>

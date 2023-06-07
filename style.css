@@ -442,6 +442,17 @@ button:hover:not(.dropdown--hover, .btn) {
   transition: .15s;
 }
 
+img:not(.logo-image) {
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 400px) {
   li {
     font-size: 11px;
@@ -451,6 +462,7 @@ button:hover:not(.dropdown--hover, .btn) {
 .image,
 .photo-reel {
   box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1);
+  position: relative;
 }
 
 /* ~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~*/
@@ -931,18 +943,12 @@ button:hover:not(.dropdown--hover, .btn) {
 #wedding__top-right-photo {
   border: solid 1px;
   grid-area: 1 / 4 / 6 / 8;
-  background-image: url(images/wedding-photo-2.jpeg);
-  background-repeat: no-repeat;
-  background-size:cover;
 }
 
 #wedding__bottom-left-photo {
   border: solid 1px;
   grid-area: 4 / 1 / 8 / 6;
   z-index: 0;
-  background-image: url(images/STOCK-wedding-couple-1.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
 }
 
 @media (min-width: 650px) {
@@ -1002,13 +1008,6 @@ button:hover:not(.dropdown--hover, .btn) {
 
 @media (min-width: 900px) {
 
-  /* Wedding Photos */
-  #wedding-info--desktop {
-    display: flex;
-    flex-direction: column;
-    grid-area: 1 / 1 / 8 / 8;
-  }
-
   #wedding-info--desktop h2 {
     font-size: var(--biggest-font);
   }
@@ -1020,14 +1019,6 @@ button:hover:not(.dropdown--hover, .btn) {
   #wedding-info--desktop button {
     justify-self: center;
     width: auto;
-  }
-  
-  #wedding__top-right-photo {
-    grid-area: 1 / 9 / 12 / 18;
-  }
-  
-  #wedding__bottom-left-photo {
-    grid-area: 9 / 1 / 18 / 12;
   }
 
   #wedding {
@@ -1049,8 +1040,6 @@ button:hover:not(.dropdown--hover, .btn) {
 }
 
 #social-events__photos div {
-  background-repeat: no-repeat;
-  background-size:cover;
   border: solid 1px;
 }
 
@@ -1060,23 +1049,18 @@ button:hover:not(.dropdown--hover, .btn) {
 
 #social-events-photo-top-left {
   grid-area: 1 / 1 / 11 / 11;
-  background-image: url(images/bridal-shower-1.jpg);
-  background-position-x: -25px;
 }
 
 #social-events-photo-top-right {
   grid-area: 1 / 12 / 11 / 22;
-  background-image: url(images/party-2.jpg);
 }
 
 #social-events-photo-bottom-left {
   grid-area: 12 / 1 / 22 / 11;
-  background-image: url(images/party-3.jpg);
 }
 
 #social-events-photo-bottom-right {
   grid-area: 12 / 12 / 22 / 22;
-  background-image: url(images/bridal-shower-invitations.jpg);
 }
 
 @media (min-width: 650px) {
@@ -1138,24 +1122,14 @@ button:hover:not(.dropdown--hover, .btn) {
 
 #corporate-photo-left {
   grid-area: 5 / 1 / 22 / 7;
-  background-image: url(images/corporate-1.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position-x: 10%;
 }
 
 #corporate-photo-middle {
   grid-area: 3 / 8 / 20 / 14;
-  background-image: url(images/corporate-2.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
 }
 
 #corporate-photo-right {
   grid-area: 1 / 15 / 18 / 21;
-  background-image: url(images/corporate-3.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
 }
 
 #corporate__text {
@@ -1229,9 +1203,6 @@ button:hover:not(.dropdown--hover, .btn) {
   aspect-ratio: 1;
   width: 80%;
   margin-top: 5rem;
-  background-image: url(images/photo-reel-4.jpeg);
-  background-repeat: no-repeat;
-  background-size:cover;
 }
 
 #photo-2--mobile {
@@ -1239,9 +1210,6 @@ button:hover:not(.dropdown--hover, .btn) {
   aspect-ratio: 0.75;
   width: 60%;
   margin-top: 3rem;
-  background-image: url(images/photo-reel-2.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
 }
 
 #photo-3--mobile {
@@ -1250,47 +1218,12 @@ button:hover:not(.dropdown--hover, .btn) {
   width: 90%;
   margin-top: 3rem;
   margin-bottom: 5rem;
-  background-image: url(images/photo-reel-5.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
 }
 
 .photo-reel {
   display: none;
   background-repeat: no-repeat;
   background-size:cover;
-}
-
-#photo-1 {
-  background-image: url(images/photo-reel-1.jpeg);
-}
-
-#photo-2 {
-  background-image: url(images/photo-reel-2.jpg);
-}
-
-#photo-3 {
-  background-image: url(images/photo-reel-3.jpeg);
-}
-
-#photo-4 {
-  background-image: url(images/photo-reel-4.jpeg);
-}
-
-#photo-5 {
-  background-image: url(images/photo-reel-5.jpg);
-}
-
-#photo-6 {
-  background-image: url(images/photo-reel-6.jpeg);
-}
-
-#photo-7 {
-  background-image: url(images/photo-reel-7.jpg);
-}
-
-#photo-8 {
-  background-image: url(images/photo-reel-8.jpeg);
 }
 
 @media (min-width: 550px) {
@@ -1303,7 +1236,6 @@ button:hover:not(.dropdown--hover, .btn) {
 
 @media (min-width: 1000px) {
   
-  /* Instagram Box */
   #instagram {
     border: none;
     height: auto;
@@ -1335,6 +1267,7 @@ button:hover:not(.dropdown--hover, .btn) {
   .photo-reel:hover {
     transform: scale(1.5);
     transition: .2s;
+    z-index: 10;
   }
 }
 
@@ -1376,34 +1309,20 @@ button:hover:not(.dropdown--hover, .btn) {
 
 #about__photos div {
   border: solid 1px;
+  position: relative;
 }
 
 #about-pic-1 {
   grid-area: 1 / 1 / 5 / 4;
-  background-image: url(images/about-photos/about-portrait.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position-x: 40%;
 }
 #about-pic-2 {
   grid-area: 1 / 4 / 2 / 5;
-  background-image: url(images/about-photos/about-1.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
 }
 #about-pic-3 {
   grid-area: 2 / 4 / 3 / 5;
-  background-image: url(images/about-photos/about-2.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position-x: 40%;
 }
 #about-pic-4 {
   grid-area: 3 / 4 / 4 / 5;
-  background-image: url(images/about-photos/about-3.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position-x: 50%;
 }
 
 @media (min-width: 900px) {

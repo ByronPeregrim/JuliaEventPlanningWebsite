@@ -859,6 +859,7 @@ img:not(.logo-image) {
   .menu--desktop img {
     pointer-events: all;
   }
+
 }
 
 @media (min-width: 900px) {
@@ -874,7 +875,7 @@ img:not(.logo-image) {
   .banner {
     padding-top: 1rem;
     height: 45rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
 
 }
@@ -884,7 +885,7 @@ img:not(.logo-image) {
 .service-info--mobile {
   display: flex;
   flex-direction: column;
-  margin: 3rem 1rem;
+  margin: 3rem 1rem 3rem 2rem;
   justify-content: center;
 }
 
@@ -894,14 +895,6 @@ img:not(.logo-image) {
 
 .service-info--mobile button {
   margin-top: 1rem;
-}
-
-@media (min-width: 1000px) {
-
-  .service-info--mobile {
-    display: none;
-  }
-  
 }
 
 /* Photo Box */
@@ -914,6 +907,20 @@ img:not(.logo-image) {
   margin-left: 5px;
   padding-top: 3rem;
   background-image: linear-gradient(whitesmoke 0%, var(--mimi-pink) 20%, var(--mimi-pink) 80%, whitesmoke);
+}
+
+@media (min-width: 650px) {
+
+  #wedding-info--mobile {
+    display: none;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .service-info--mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -951,16 +958,33 @@ img:not(.logo-image) {
   z-index: 0;
 }
 
-@media (min-width: 650px) {
+#wedding-info--mobile {
+  margin-top: 1rem;
+}
 
-  #wedding-info--mobile {
-    display: none;
-  }
+.background-block {
+  position: absolute;
+  z-index: -10;
+  background-color: #dfaeb475;
+  box-shadow: 0 0 40px 40px whitesmoke inset;
+  margin-left: -5%;
+  height: 18rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#social-events-info--mobile__background { 
+  margin-top: 1rem;
+}
+
+
+@media (min-width: 650px) {
 
   #wedding-info--desktop {
     display: flex;
     flex-direction: column;
     grid-area: 1 / 1 / 8 / 8;
+    padding-top: .5rem;
   }
 
   #wedding-info--desktop h2 {
@@ -1007,7 +1031,11 @@ img:not(.logo-image) {
 }
 
 @media (min-width: 900px) {
-
+  
+  #wedding-info--desktop {
+    padding-top: 2rem;
+  }
+  
   #wedding-info--desktop h2 {
     font-size: var(--biggest-font);
   }
@@ -1025,6 +1053,10 @@ img:not(.logo-image) {
     grid-template-columns: repeat(17, 3rem);
     grid-template-rows: repeat(17, 3rem);
     width: auto;
+  }
+
+  #photo-box--wedding {
+    padding-top: 4rem;
   }
 
 }
@@ -1061,12 +1093,6 @@ img:not(.logo-image) {
 
 #social-events-photo-bottom-right {
   grid-area: 12 / 12 / 22 / 22;
-}
-
-@media (min-width: 650px) {
-  .service-info--mobile h2 {
-    font-size: var(--biggest-font);
-  }
 }
 
 @media (min-width: 900px) {
@@ -1149,10 +1175,6 @@ img:not(.logo-image) {
 }
 
 @media (min-width: 900px) {
-
-  .service-info--mobile {
-    display: none;
-  }
   
   #corporate__text {
     display: flex;
@@ -1161,10 +1183,13 @@ img:not(.logo-image) {
     margin-left: 2rem;
     margin-right: 1rem;
     width: 29rem;
+    padding-bottom: 4rem;
   }
 
   #corporate__text h2 {
     font-size: var(--biggest-font);
+    min-width: 22rem;
+    margin-bottom: 0;
   }
   
   #corporate {
@@ -1239,8 +1264,8 @@ img:not(.logo-image) {
   #instagram {
     border: none;
     height: auto;
-    margin-bottom: 5rem;
-    margin-top: 7rem;
+    margin-bottom: 4rem;
+    margin-top: 6rem;
   }
     
   #photo-1--mobile,

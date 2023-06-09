@@ -647,7 +647,7 @@ img:not(.logo-image) {
   .menu--desktop__left,
   .menu--desktop__right {
     height: 5rem;
-    width: 24rem;
+    width: 18rem;
     display: flex;
     justify-content: space-around;
     align-items: center;

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rpt="http://openoffice.org/2005/report" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><dc:date>2023-05-24T17:42:26.195149101</dc:date><meta:editing-duration>P4DT2H19M19S</meta:editing-duration><meta:editing-cycles>30</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="3" meta:paragraph-count="113" meta:word-count="753" meta:character-count="3915" meta:non-whitespace-character-count="3374"/></office:meta>
+ <office:meta><dc:date>2023-06-08T20:35:34.937885378</dc:date><meta:editing-duration>P7DT1H21M20S</meta:editing-duration><meta:editing-cycles>45</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="4" meta:paragraph-count="134" meta:word-count="1022" meta:character-count="5384" meta:non-whitespace-character-count="4613"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">4045</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">70213</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">48950</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="long">21354</config:config-item>
@@ -13,12 +13,12 @@
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">22087</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">16133</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">28557</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">73501</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">4045</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">70213</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">48948</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">25396</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">91565</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -88,7 +88,7 @@
    <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
    <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">2141763</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">2294835</config:config-item>
    <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
    <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
@@ -153,7 +153,7 @@
  <office:styles>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.1181in" draw:shadow-offset-y="0.1181in" draw:start-line-spacing-horizontal="0.1114in" draw:start-line-spacing-vertical="0.1114in" draw:end-line-spacing-horizontal="0.1114in" draw:end-line-spacing-vertical="0.1114in" style:flow-with-text="false"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="Noto Serif CJK SC" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Noto Sans Devanagari1" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -266,106 +266,157 @@
    <style:text-properties fo:font-weight="normal" officeooo:rsid="00148e11" officeooo:paragraph-rsid="00148e11" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:paragraph-rsid="00105e9a"/>
-  </style:style>
-  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="00125733" officeooo:paragraph-rsid="00125733"/>
-  </style:style>
-  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="00133481" officeooo:paragraph-rsid="00133481"/>
-  </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="00133481" officeooo:paragraph-rsid="001cc4ca"/>
-  </style:style>
-  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="00148e11" officeooo:paragraph-rsid="00148e11"/>
-  </style:style>
-  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="0015c184" officeooo:paragraph-rsid="0015c184"/>
-  </style:style>
-  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="0017b89f" officeooo:paragraph-rsid="0017b89f"/>
-  </style:style>
-  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="0018b124" officeooo:paragraph-rsid="0018b124"/>
-  </style:style>
-  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="001981b3" officeooo:paragraph-rsid="001981b3"/>
-  </style:style>
-  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="0019c9a4" officeooo:paragraph-rsid="0019c9a4"/>
-  </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="001b681b" officeooo:paragraph-rsid="001b681b"/>
-  </style:style>
-  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" fo:font-weight="bold" officeooo:rsid="00133481" officeooo:paragraph-rsid="00133481" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" fo:font-weight="bold" officeooo:rsid="001b8fcc" officeooo:paragraph-rsid="001b8fcc" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="001baa24" officeooo:paragraph-rsid="001baa24"/>
-  </style:style>
-  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="001cc4ca" officeooo:paragraph-rsid="001cc4ca"/>
-  </style:style>
-  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties officeooo:paragraph-rsid="00105e9a"/>
-  </style:style>
-  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties fo:font-weight="normal" officeooo:rsid="00105e9a" officeooo:paragraph-rsid="00105e9a" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties fo:font-weight="normal" officeooo:rsid="00148e11" officeooo:paragraph-rsid="00148e11" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
    <style:text-properties fo:font-weight="normal" officeooo:rsid="001ec0cd" officeooo:paragraph-rsid="001ec0cd" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
   </style:style>
-  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:paragraph-rsid="00105e9a"/>
+  </style:style>
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:rsid="00125733" officeooo:paragraph-rsid="00125733"/>
   </style:style>
-  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" fo:font-weight="bold" officeooo:rsid="00133481" officeooo:paragraph-rsid="00133481" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" fo:font-weight="bold" officeooo:rsid="001b8fcc" officeooo:paragraph-rsid="001b8fcc" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:rsid="00133481" officeooo:paragraph-rsid="00133481"/>
   </style:style>
-  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties officeooo:rsid="0018b124" officeooo:paragraph-rsid="0018b124"/>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="00133481" officeooo:paragraph-rsid="001cc4ca"/>
   </style:style>
-  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties officeooo:rsid="001981b3" officeooo:paragraph-rsid="001981b3"/>
-  </style:style>
-  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties officeooo:rsid="0019c9a4" officeooo:paragraph-rsid="0019c9a4"/>
-  </style:style>
-  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties officeooo:rsid="001b681b" officeooo:paragraph-rsid="001b681b"/>
-  </style:style>
-  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001b8fcc" officeooo:paragraph-rsid="001b8fcc" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001baa24" officeooo:paragraph-rsid="001baa24" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00133481" officeooo:paragraph-rsid="001cc4ca" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001cc4ca" officeooo:paragraph-rsid="001cc4ca" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:rsid="00148e11" officeooo:paragraph-rsid="00148e11"/>
   </style:style>
-  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="0015c184" officeooo:paragraph-rsid="0015c184"/>
+  </style:style>
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:rsid="0017b89f" officeooo:paragraph-rsid="0017b89f"/>
   </style:style>
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="0018b124" officeooo:paragraph-rsid="0018b124"/>
+  </style:style>
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="001981b3" officeooo:paragraph-rsid="001981b3"/>
+  </style:style>
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="0019c9a4" officeooo:paragraph-rsid="0019c9a4"/>
+  </style:style>
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="001b681b" officeooo:paragraph-rsid="001b681b"/>
+  </style:style>
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" fo:font-weight="bold" officeooo:rsid="00133481" officeooo:paragraph-rsid="00133481" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" fo:font-weight="bold" officeooo:rsid="001b8fcc" officeooo:paragraph-rsid="001b8fcc" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="001baa24" officeooo:paragraph-rsid="001baa24"/>
+  </style:style>
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="001cc4ca" officeooo:paragraph-rsid="001cc4ca"/>
+  </style:style>
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001b8fcc" officeooo:paragraph-rsid="001b8fcc" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001baa24" officeooo:paragraph-rsid="001baa24" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00133481" officeooo:paragraph-rsid="001cc4ca" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001cc4ca" officeooo:paragraph-rsid="001cc4ca" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties officeooo:paragraph-rsid="00105e9a"/>
+  </style:style>
+  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties fo:font-weight="normal" officeooo:rsid="00105e9a" officeooo:paragraph-rsid="00105e9a" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties fo:font-weight="normal" officeooo:rsid="00105e9a" officeooo:paragraph-rsid="00105e9a" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties fo:font-weight="normal" officeooo:rsid="00148e11" officeooo:paragraph-rsid="00148e11" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties fo:font-weight="normal" officeooo:rsid="001ec0cd" officeooo:paragraph-rsid="001ec0cd" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties fo:font-weight="normal" officeooo:rsid="00226851" officeooo:paragraph-rsid="00226851" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="00125733" officeooo:paragraph-rsid="00125733"/>
+  </style:style>
+  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" fo:font-weight="bold" officeooo:rsid="00133481" officeooo:paragraph-rsid="00133481" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" fo:font-weight="bold" officeooo:rsid="001b8fcc" officeooo:paragraph-rsid="001b8fcc" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
+   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" officeooo:rsid="00226851" officeooo:paragraph-rsid="00226851"/>
+  </style:style>
+  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
+   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" officeooo:rsid="00226851" officeooo:paragraph-rsid="00229474"/>
+  </style:style>
+  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
+   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" officeooo:rsid="00229474" officeooo:paragraph-rsid="00229474"/>
+  </style:style>
+  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
+   <style:text-properties style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" officeooo:rsid="00230433" officeooo:paragraph-rsid="00230433"/>
+  </style:style>
   <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="00133481" officeooo:paragraph-rsid="00133481"/>
+  </style:style>
+  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="0018b124" officeooo:paragraph-rsid="0018b124"/>
+  </style:style>
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="001981b3" officeooo:paragraph-rsid="001981b3"/>
+  </style:style>
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="0019c9a4" officeooo:paragraph-rsid="0019c9a4"/>
+  </style:style>
+  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="001b681b" officeooo:paragraph-rsid="001b681b"/>
+  </style:style>
+  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001b8fcc" officeooo:paragraph-rsid="001b8fcc" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001baa24" officeooo:paragraph-rsid="001baa24" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00133481" officeooo:paragraph-rsid="001cc4ca" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001cc4ca" officeooo:paragraph-rsid="001cc4ca" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P47" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
+   <style:text-properties style:text-underline-style="none" officeooo:rsid="00229474" officeooo:paragraph-rsid="00229474"/>
+  </style:style>
+  <style:style style:name="P48" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="00148e11" officeooo:paragraph-rsid="00148e11"/>
+  </style:style>
+  <style:style style:name="P49" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="0017b89f" officeooo:paragraph-rsid="0017b89f"/>
+  </style:style>
+  <style:style style:name="P50" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="0017b89f" officeooo:paragraph-rsid="0017b89f"/>
+  </style:style>
+  <style:style style:name="P51" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
    <style:text-properties officeooo:rsid="0015c184" officeooo:paragraph-rsid="0015c184"/>
+  </style:style>
+  <style:style style:name="P52" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="00226851" officeooo:paragraph-rsid="00226851"/>
+  </style:style>
+  <style:style style:name="P53" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
+   <style:text-properties officeooo:rsid="00226851" officeooo:paragraph-rsid="00226851"/>
+  </style:style>
+  <style:style style:name="P54" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
+   <style:text-properties officeooo:rsid="00226851" officeooo:paragraph-rsid="00226851"/>
+  </style:style>
+  <style:style style:name="P55" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
+   <style:text-properties officeooo:paragraph-rsid="00226851"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties fo:font-weight="normal" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
@@ -374,22 +425,34 @@
    <style:text-properties fo:font-weight="normal" officeooo:rsid="00105e9a" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T3" style:family="text">
-   <style:text-properties officeooo:rsid="00125733"/>
+   <style:text-properties fo:font-weight="normal" officeooo:rsid="00226851" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T4" style:family="text">
-   <style:text-properties officeooo:rsid="0015c184"/>
+   <style:text-properties officeooo:rsid="00125733"/>
   </style:style>
   <style:style style:name="T5" style:family="text">
-   <style:text-properties officeooo:rsid="0017b89f"/>
+   <style:text-properties officeooo:rsid="0015c184"/>
   </style:style>
   <style:style style:name="T6" style:family="text">
-   <style:text-properties officeooo:rsid="001b8fcc"/>
+   <style:text-properties officeooo:rsid="0017b89f"/>
   </style:style>
   <style:style style:name="T7" style:family="text">
-   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+   <style:text-properties officeooo:rsid="001b8fcc"/>
   </style:style>
   <style:style style:name="T8" style:family="text">
+   <style:text-properties style:text-underline-style="none"/>
+  </style:style>
+  <style:style style:name="T9" style:family="text">
+   <style:text-properties style:text-underline-style="none" fo:font-weight="normal" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="T10" style:family="text">
+   <style:text-properties style:text-underline-style="none" officeooo:rsid="00229474"/>
+  </style:style>
+  <style:style style:name="T11" style:family="text">
    <style:text-properties officeooo:rsid="001ec0cd"/>
+  </style:style>
+  <style:style style:name="T12" style:family="text">
+   <style:text-properties officeooo:rsid="00230433"/>
   </style:style>
   <text:list-style style:name="L1">
    <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" loext:num-list-format="%1%." style:num-suffix="." text:bullet-char="•">
@@ -443,6 +506,162 @@
     </style:list-level-properties>
    </text:list-level-style-bullet>
   </text:list-style>
+  <text:list-style style:name="L2">
+   <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" loext:num-list-format="%1%." text:bullet-char="•">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.5in" fo:text-indent="-0.25in" fo:margin-left="0.5in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" loext:num-list-format="%2%." text:bullet-char="◦">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.75in" fo:text-indent="-0.25in" fo:margin-left="0.75in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" loext:num-list-format="%3%." text:bullet-char="▪">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1in" fo:text-indent="-0.25in" fo:margin-left="1in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" loext:num-list-format="%4%." text:bullet-char="•">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.25in" fo:text-indent="-0.25in" fo:margin-left="1.25in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" loext:num-list-format="%5%." text:bullet-char="◦">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.5in" fo:text-indent="-0.25in" fo:margin-left="1.5in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" loext:num-list-format="%6%." text:bullet-char="▪">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.75in" fo:text-indent="-0.25in" fo:margin-left="1.75in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" loext:num-list-format="%7%." text:bullet-char="•">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2in" fo:text-indent="-0.25in" fo:margin-left="2in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" loext:num-list-format="%8%." text:bullet-char="◦">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.25in" fo:text-indent="-0.25in" fo:margin-left="2.25in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" loext:num-list-format="%9%." text:bullet-char="▪">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.5in" fo:text-indent="-0.25in" fo:margin-left="2.5in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" loext:num-list-format="%10%." text:bullet-char="•">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.75in" fo:text-indent="-0.25in" fo:margin-left="2.75in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+  </text:list-style>
+  <text:list-style style:name="L3">
+   <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" loext:num-list-format="%1%." text:bullet-char="•">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.9925in" fo:text-indent="-0.25in" fo:margin-left="0.9925in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" loext:num-list-format="%2%." text:bullet-char="◦">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.2425in" fo:text-indent="-0.25in" fo:margin-left="1.2425in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" loext:num-list-format="%3%." text:bullet-char="▪">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.4925in" fo:text-indent="-0.25in" fo:margin-left="1.4925in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" loext:num-list-format="%4%." text:bullet-char="•">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.7425in" fo:text-indent="-0.25in" fo:margin-left="1.7425in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" loext:num-list-format="%5%." text:bullet-char="◦">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.9925in" fo:text-indent="-0.25in" fo:margin-left="1.9925in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" loext:num-list-format="%6%." text:bullet-char="▪">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.2425in" fo:text-indent="-0.25in" fo:margin-left="2.2425in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" loext:num-list-format="%7%." text:bullet-char="•">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.4925in" fo:text-indent="-0.25in" fo:margin-left="2.4925in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" loext:num-list-format="%8%." text:bullet-char="◦">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.7425in" fo:text-indent="-0.25in" fo:margin-left="2.7425in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" loext:num-list-format="%9%." text:bullet-char="▪">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.9925in" fo:text-indent="-0.25in" fo:margin-left="2.9925in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" loext:num-list-format="%10%." text:bullet-char="•">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.2425in" fo:text-indent="-0.25in" fo:margin-left="3.2425in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+  </text:list-style>
+  <text:list-style style:name="L4">
+   <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" loext:num-list-format="%1%." text:bullet-char="•">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.5in" fo:text-indent="-0.25in" fo:margin-left="0.5in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" loext:num-list-format="%2%." text:bullet-char="◦">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.75in" fo:text-indent="-0.25in" fo:margin-left="0.75in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" loext:num-list-format="%3%." text:bullet-char="▪">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1in" fo:text-indent="-0.25in" fo:margin-left="1in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" loext:num-list-format="%4%." text:bullet-char="•">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.25in" fo:text-indent="-0.25in" fo:margin-left="1.25in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" loext:num-list-format="%5%." text:bullet-char="◦">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.5in" fo:text-indent="-0.25in" fo:margin-left="1.5in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" loext:num-list-format="%6%." text:bullet-char="▪">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.75in" fo:text-indent="-0.25in" fo:margin-left="1.75in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" loext:num-list-format="%7%." text:bullet-char="•">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2in" fo:text-indent="-0.25in" fo:margin-left="2in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" loext:num-list-format="%8%." text:bullet-char="◦">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.25in" fo:text-indent="-0.25in" fo:margin-left="2.25in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" loext:num-list-format="%9%." text:bullet-char="▪">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.5in" fo:text-indent="-0.25in" fo:margin-left="2.5in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" loext:num-list-format="%10%." text:bullet-char="•">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.75in" fo:text-indent="-0.25in" fo:margin-left="2.75in"/>
+    </style:list-level-properties>
+   </text:list-level-style-bullet>
+  </text:list-style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="8.5in" fo:page-height="11in" style:num-format="1" style:print-orientation="portrait" fo:margin-top="0.7874in" fo:margin-bottom="0.7874in" fo:margin-left="0.7874in" fo:margin-right="0.7874in" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="20" style:layout-grid-base-height="0.278in" style:layout-grid-ruby-height="0.139in" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:footnote-max-height="0in" loext:margin-gutter="0in">
     <style:footnote-sep style:width="0.0071in" style:distance-before-sep="0.0398in" style:distance-after-sep="0.0398in" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
@@ -468,245 +687,245 @@
    </text:sequence-decls>
    <text:p text:style-name="P2">BEFORE WRITING CODE:</text:p>
    <text:p text:style-name="P1"/>
-   <text:list xml:id="list689955346" text:style-name="L1">
+   <text:list xml:id="list3762475951" text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P21">STUDY COMPETITION: </text:p>
+     <text:p text:style-name="P26">STUDY COMPETITION: </text:p>
      <text:list>
       <text:list-item>
-       <text:p text:style-name="P21">Google “Event planning” and some other keywords and view the top websites to get ideas. If they are at the top of google, they must be doing something right.</text:p>
+       <text:p text:style-name="P26">Google “Event planning” and some other keywords and view the top websites to get ideas. If they are at the top of google, they must be doing something right.</text:p>
       </text:list-item>
      </text:list>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P21">ORGANIZE CONTENT: </text:p>
+     <text:p text:style-name="P26">ORGANIZE CONTENT: </text:p>
      <text:list>
       <text:list-item>
-       <text:p text:style-name="P21">Max 7 elements on first-level</text:p>
+       <text:p text:style-name="P26">Max 7 elements on first-level</text:p>
       </text:list-item>
      </text:list>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P21">Pages: </text:p>
+     <text:p text:style-name="P26">Pages: </text:p>
      <text:list>
       <text:list-item>
-       <text:p text:style-name="P21">Home</text:p>
+       <text:p text:style-name="P26">Home</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P21">Services</text:p>
+       <text:p text:style-name="P26">Services</text:p>
        <text:list>
         <text:list-item>
-         <text:p text:style-name="P21">List of event types</text:p>
+         <text:p text:style-name="P26">List of event types</text:p>
          <text:list>
           <text:list-item>
-           <text:p text:style-name="P22">Weddings</text:p>
+           <text:p text:style-name="P28">Weddings</text:p>
           </text:list-item>
           <text:list-item>
-           <text:p text:style-name="P22">Destination Weddings</text:p>
+           <text:p text:style-name="P28">Destination Weddings</text:p>
           </text:list-item>
           <text:list-item>
-           <text:p text:style-name="P22">Private Social Events</text:p>
+           <text:p text:style-name="P28">Private Social Events</text:p>
           </text:list-item>
           <text:list-item>
-           <text:p text:style-name="P22">Corporate Events</text:p>
+           <text:p text:style-name="P28">Corporate Events</text:p>
           </text:list-item>
          </text:list>
         </text:list-item>
         <text:list-item>
-         <text:p text:style-name="P21">Link to contact us</text:p>
+         <text:p text:style-name="P26">Link to contact us</text:p>
         </text:list-item>
        </text:list>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P21">About Us</text:p>
+       <text:p text:style-name="P26">About Us</text:p>
        <text:list>
         <text:list-item>
-         <text:p text:style-name="P21">Link to Contact Us</text:p>
+         <text:p text:style-name="P26">Link to Contact Us</text:p>
         </text:list-item>
         <text:list-item>
-         <text:p text:style-name="P21">Testimonials</text:p>
+         <text:p text:style-name="P26">Testimonials</text:p>
         </text:list-item>
         <text:list-item>
-         <text:p text:style-name="P21">List of services</text:p>
+         <text:p text:style-name="P26">List of services</text:p>
         </text:list-item>
        </text:list>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P21">Contact Us</text:p>
+       <text:p text:style-name="P26">Contact Us</text:p>
        <text:list>
         <text:list-item>
-         <text:p text:style-name="P21">Contact form</text:p>
+         <text:p text:style-name="P26">Contact form</text:p>
          <text:list>
           <text:list-item>
-           <text:p text:style-name="P21">Name <text:span text:style-name="T8">(required)</text:span></text:p>
+           <text:p text:style-name="P26">Name <text:span text:style-name="T11">(required)</text:span></text:p>
           </text:list-item>
           <text:list-item>
-           <text:p text:style-name="P21">email <text:span text:style-name="T8">(required)</text:span></text:p>
+           <text:p text:style-name="P26">email <text:span text:style-name="T11">(required)</text:span></text:p>
           </text:list-item>
           <text:list-item>
-           <text:p text:style-name="P21">phone number <text:s/><text:span text:style-name="T8">(required)</text:span></text:p>
+           <text:p text:style-name="P26">phone number <text:s/><text:span text:style-name="T11">(required)</text:span></text:p>
           </text:list-item>
           <text:list-item>
-           <text:p text:style-name="P23">company name</text:p>
+           <text:p text:style-name="P29">company name</text:p>
           </text:list-item>
           <text:list-item>
-           <text:p text:style-name="P21">event type</text:p>
+           <text:p text:style-name="P26">event type</text:p>
           </text:list-item>
           <text:list-item>
-           <text:p text:style-name="P21">event date</text:p>
+           <text:p text:style-name="P26">event date</text:p>
           </text:list-item>
           <text:list-item>
-           <text:p text:style-name="P21">message <text:span text:style-name="T8">(required)</text:span></text:p>
-          </text:list-item>
-         </text:list>
-        </text:list-item>
-       </text:list>
-      </text:list-item>
-      <text:list-item>
-       <text:p text:style-name="P21">A PORTFOLIO <text:span text:style-name="T3">PAGE </text:span>WOULD BE GREAT</text:p>
-      </text:list-item>
-     </text:list>
-    </text:list-item>
-    <text:list-item>
-     <text:p text:style-name="P21">Ideas:</text:p>
-     <text:list>
-      <text:list-item>
-       <text:p text:style-name="P21">Bottom of every page has contact form/info</text:p>
-      </text:list-item>
-      <text:list-item>
-       <text:p text:style-name="P21">Phone number/Email in top right corner at all times</text:p>
-      </text:list-item>
-      <text:list-item>
-       <text:p text:style-name="P20"><text:span text:style-name="T2">Really like </text:span><text:a xlink:type="simple" xlink:href="http://llgevents.com/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T2">LLG events</text:span></text:a></text:p>
-      </text:list-item>
-      <text:list-item>
-       <text:p text:style-name="P24">static banner at the top of every page with links to all pages</text:p>
-      </text:list-item>
-     </text:list>
-    </text:list-item>
-    <text:list-item>
-     <text:p text:style-name="P25">SEO</text:p>
-     <text:list>
-      <text:list-item>
-       <text:p text:style-name="P27">Base page contents around relative keywords for those pages. Include those keywords in headers on the page. </text:p>
-      </text:list-item>
-      <text:list-item>
-       <text:p text:style-name="P28">Do not need to use exact match keywords!</text:p>
-       <text:list>
-        <text:list-item>
-         <text:p text:style-name="P28">Google can recognize connecting words and similar words</text:p>
-        </text:list-item>
-       </text:list>
-      </text:list-item>
-      <text:list-item>
-       <text:p text:style-name="P28">Do NOT need to:</text:p>
-       <text:list>
-        <text:list-item>
-         <text:p text:style-name="P28">Stuff exact match keywords onto a page</text:p>
-        </text:list-item>
-        <text:list-item>
-         <text:p text:style-name="P28">use a keyword a specific amount of times</text:p>
-        </text:list-item>
-        <text:list-item>
-         <text:p text:style-name="P28">meet a minimum word count</text:p>
-        </text:list-item>
-       </text:list>
-      </text:list-item>
-      <text:list-item>
-       <text:p text:style-name="P28">Goal of page is to satisfy searchers intent</text:p>
-       <text:list>
-        <text:list-item>
-         <text:p text:style-name="P28">Address the things they want to see</text:p>
-        </text:list-item>
-        <text:list-item>
-         <text:p text:style-name="P28">Focus on:</text:p>
-         <text:list>
-          <text:list-item>
-           <text:p text:style-name="P28">Titles</text:p>
-          </text:list-item>
-          <text:list-item>
-           <text:p text:style-name="P28">Subheadings</text:p>
-          </text:list-item>
-          <text:list-item>
-           <text:p text:style-name="P28"><text:soft-page-break/>Internal Linking</text:p>
-          </text:list-item>
-          <text:list-item>
-           <text:p text:style-name="P28">Readability</text:p>
-          </text:list-item>
-          <text:list-item>
-           <text:p text:style-name="P28">The Content itself</text:p>
+           <text:p text:style-name="P26">message <text:span text:style-name="T11">(required)</text:span></text:p>
           </text:list-item>
          </text:list>
         </text:list-item>
        </text:list>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P28">Use meta description but don’t spend a lot of time on them</text:p>
+       <text:p text:style-name="P26">A PORTFOLIO <text:span text:style-name="T4">PAGE </text:span>WOULD BE GREAT</text:p>
+      </text:list-item>
+     </text:list>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P26">Ideas:</text:p>
+     <text:list>
+      <text:list-item>
+       <text:p text:style-name="P26">Bottom of every page has contact form/info</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P28">Add internal links to your pages</text:p>
+       <text:p text:style-name="P26">Phone number/Email in top right corner at all times</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P28">Optimize images</text:p>
+       <text:p text:style-name="P25"><text:span text:style-name="T2">Really like </text:span><text:a xlink:type="simple" xlink:href="http://llgevents.com/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T2">LLG events</text:span></text:a></text:p>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P31">static banner at the top of every page with links to all pages</text:p>
+      </text:list-item>
+     </text:list>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P32">SEO</text:p>
+     <text:list>
+      <text:list-item>
+       <text:p text:style-name="P38">Base page contents around relative keywords for those pages. Include those keywords in headers on the page. </text:p>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P39">Do not need to use exact match keywords!</text:p>
        <text:list>
         <text:list-item>
-         <text:p text:style-name="P28">change file names of images to something short and descriptive (i.e. “puppy.jpg”)</text:p>
-        </text:list-item>
-        <text:list-item>
-         <text:p text:style-name="P28">use Alt text (alt = “puppy sitting on a couch”)</text:p>
+         <text:p text:style-name="P39">Google can recognize connecting words and similar words</text:p>
         </text:list-item>
        </text:list>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P28">Improve readability</text:p>
+       <text:p text:style-name="P39">Do NOT need to:</text:p>
        <text:list>
         <text:list-item>
-         <text:p text:style-name="P28">short sentences/paragraphs</text:p>
+         <text:p text:style-name="P39">Stuff exact match keywords onto a page</text:p>
         </text:list-item>
         <text:list-item>
-         <text:p text:style-name="P28">descriptive subheadings</text:p>
+         <text:p text:style-name="P39">use a keyword a specific amount of times</text:p>
         </text:list-item>
         <text:list-item>
-         <text:p text:style-name="P28">large enough font</text:p>
-        </text:list-item>
-        <text:list-item>
-         <text:p text:style-name="P28">avoid big words</text:p>
-        </text:list-item>
-        <text:list-item>
-         <text:p text:style-name="P28">write as you speak</text:p>
+         <text:p text:style-name="P39">meet a minimum word count</text:p>
         </text:list-item>
        </text:list>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P28">Open graph meta tags</text:p>
-      </text:list-item>
-      <text:list-item>
-       <text:p text:style-name="P28">Use short and descriptive URL slug</text:p>
-      </text:list-item>
-      <text:list-item>
-       <text:p text:style-name="P28">Ask people to link to your page:</text:p>
+       <text:p text:style-name="P39">Goal of page is to satisfy searchers intent</text:p>
        <text:list>
         <text:list-item>
-         <text:p text:style-name="P28">Saratoga event planner website</text:p>
+         <text:p text:style-name="P39">Address the things they want to see</text:p>
         </text:list-item>
         <text:list-item>
-         <text:p text:style-name="P28">Karen &amp; Co</text:p>
-        </text:list-item>
-       </text:list>
-      </text:list-item>
-      <text:list-item>
-       <text:p text:style-name="P29">Best technical practices:</text:p>
-       <text:list>
-        <text:list-item>
-         <text:p text:style-name="P29">Optimize site structure with internal links</text:p>
-        </text:list-item>
-        <text:list-item>
-         <text:p text:style-name="P30">Don’t want website to run slow</text:p>
+         <text:p text:style-name="P39">Focus on:</text:p>
          <text:list>
           <text:list-item>
-           <text:p text:style-name="P30">Cache</text:p>
+           <text:p text:style-name="P39">Titles</text:p>
           </text:list-item>
           <text:list-item>
-           <text:p text:style-name="P31">Compress image<text:span text:style-name="T6">s</text:span></text:p>
+           <text:p text:style-name="P39">Subheadings</text:p>
+          </text:list-item>
+          <text:list-item>
+           <text:p text:style-name="P39"><text:soft-page-break/>Internal Linking</text:p>
+          </text:list-item>
+          <text:list-item>
+           <text:p text:style-name="P39">Readability</text:p>
+          </text:list-item>
+          <text:list-item>
+           <text:p text:style-name="P39">The Content itself</text:p>
+          </text:list-item>
+         </text:list>
+        </text:list-item>
+       </text:list>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P39">Use meta description but don’t spend a lot of time on them</text:p>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P39">Add internal links to your pages</text:p>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P39">Optimize images</text:p>
+       <text:list>
+        <text:list-item>
+         <text:p text:style-name="P39">change file names of images to something short and descriptive (i.e. “puppy.jpg”)</text:p>
+        </text:list-item>
+        <text:list-item>
+         <text:p text:style-name="P39">use Alt text (alt = “puppy sitting on a couch”)</text:p>
+        </text:list-item>
+       </text:list>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P39">Improve readability</text:p>
+       <text:list>
+        <text:list-item>
+         <text:p text:style-name="P39">short sentences/paragraphs</text:p>
+        </text:list-item>
+        <text:list-item>
+         <text:p text:style-name="P39">descriptive subheadings</text:p>
+        </text:list-item>
+        <text:list-item>
+         <text:p text:style-name="P39">large enough font</text:p>
+        </text:list-item>
+        <text:list-item>
+         <text:p text:style-name="P39">avoid big words</text:p>
+        </text:list-item>
+        <text:list-item>
+         <text:p text:style-name="P39">write as you speak</text:p>
+        </text:list-item>
+       </text:list>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P39">Open graph meta tags</text:p>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P39">Use short and descriptive URL slug</text:p>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P39">Ask people to link to your page:</text:p>
+       <text:list>
+        <text:list-item>
+         <text:p text:style-name="P39">Saratoga event planner website</text:p>
+        </text:list-item>
+        <text:list-item>
+         <text:p text:style-name="P39">Karen &amp; Co</text:p>
+        </text:list-item>
+       </text:list>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P40">Best technical practices:</text:p>
+       <text:list>
+        <text:list-item>
+         <text:p text:style-name="P40">Optimize site structure with internal links</text:p>
+        </text:list-item>
+        <text:list-item>
+         <text:p text:style-name="P41">Don’t want website to run slow</text:p>
+         <text:list>
+          <text:list-item>
+           <text:p text:style-name="P41">Cache</text:p>
+          </text:list-item>
+          <text:list-item>
+           <text:p text:style-name="P42">Compress image<text:span text:style-name="T7">s</text:span></text:p>
           </text:list-item>
          </text:list>
         </text:list-item>
@@ -715,133 +934,133 @@
      </text:list>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P26">WIREFRAME: </text:p>
+     <text:p text:style-name="P33">WIREFRAME: </text:p>
      <text:list>
       <text:list-item>
-       <text:p text:style-name="P32">Sitemap </text:p>
+       <text:p text:style-name="P43">Sitemap </text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P33">Design pages for desktop and mobile</text:p>
+       <text:p text:style-name="P44">Design pages for desktop and mobile</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P34">Think of content flow on the page. Structure pages to tell a story in the order that you want to. Sell the product in the way you want to, in the order you want.</text:p>
+       <text:p text:style-name="P45">Think of content flow on the page. Structure pages to tell a story in the order that you want to. Sell the product in the way you want to, in the order you want.</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P35">Look at other websites for layout ideas</text:p>
+       <text:p text:style-name="P46">Look at other websites for layout ideas</text:p>
       </text:list-item>
      </text:list>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P36">TIMELIME:</text:p>
+     <text:p text:style-name="P48">TIMELIME:</text:p>
      <text:list>
       <text:list-item>
-       <text:p text:style-name="P36">Planning – Wireframe / UI Layout / Website layout</text:p>
+       <text:p text:style-name="P48">Planning – Wireframe / UI Layout / Website layout</text:p>
        <text:list>
         <text:list-item>
-         <text:p text:style-name="P36">check out wireframe software</text:p>
+         <text:p text:style-name="P48">check out wireframe software</text:p>
         </text:list-item>
        </text:list>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36">Start coding </text:p>
+       <text:p text:style-name="P48">Start coding </text:p>
        <text:list>
         <text:list-item>
-         <text:p text:style-name="P36">use plan as guide</text:p>
+         <text:p text:style-name="P48">use plan as guide</text:p>
         </text:list-item>
         <text:list-item>
-         <text:p text:style-name="P36">research similar coding project<text:span text:style-name="T5">s</text:span></text:p>
+         <text:p text:style-name="P48">research similar coding project<text:span text:style-name="T6">s</text:span></text:p>
         </text:list-item>
        </text:list>
       </text:list-item>
      </text:list>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37">Videos to watch:</text:p>
+     <text:p text:style-name="P49">Videos to watch:</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P10"/>
    <text:p text:style-name="P2">WRITING CODE:</text:p>
-   <text:list xml:id="list174227659020075" text:continue-numbering="true" text:style-name="L1">
+   <text:list xml:id="list203535221631802" text:continue-numbering="true" text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P36">TIPS:</text:p>
+     <text:p text:style-name="P48">TIPS:</text:p>
      <text:list>
       <text:list-item>
-       <text:p text:style-name="P36">Pick a design and stick to it</text:p>
+       <text:p text:style-name="P48">Pick a design and stick to it</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36">For typography – Use the golden ratio! Multiply each font by 1.618 to get the next one! (Using rem or px) </text:p>
+       <text:p text:style-name="P48">For typography – Use the golden ratio! Multiply each font by 1.618 to get the next one! (Using rem or px) </text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36">Don’t be afraid of animations! They can be easy to use.</text:p>
+       <text:p text:style-name="P48">Don’t be afraid of animations! They can be easy to use.</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36">Choose an action color to bring attention to certain things (like Contact button)</text:p>
+       <text:p text:style-name="P48">Choose an action color to bring attention to certain things (like Contact button)</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36">Dont go heavy on images, but if you do, optimize it</text:p>
+       <text:p text:style-name="P48">Dont go heavy on images, but if you do, optimize it</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36">uses correct formats for images (.jpeg, .png, .svg, .gif)</text:p>
+       <text:p text:style-name="P48">uses correct formats for images (.jpeg, .png, .svg, .gif)</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36">Use white space. DONT CROWD PAGE</text:p>
+       <text:p text:style-name="P48">Use white space. DONT CROWD PAGE</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36">Use a style guide (Set up commonly used typography and colors)</text:p>
+       <text:p text:style-name="P48">Use a style guide (Set up commonly used typography and colors)</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36"><text:soft-page-break/>When in doubt, use one font (probably Helvetica, <text:span text:style-name="T4">Open Sans, Roboto, Merriweather,</text:span>)</text:p>
+       <text:p text:style-name="P48"><text:soft-page-break/>When in doubt, use one font (probably Helvetica, <text:span text:style-name="T5">Open Sans, Roboto, Merriweather,</text:span>)</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36">Keep colors simple. Avoid primary colors. Maybe use tool to get color palette.</text:p>
+       <text:p text:style-name="P48">Keep colors simple. Avoid primary colors. Maybe use tool to get color palette.</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36">Left align text</text:p>
+       <text:p text:style-name="P48">Left align text</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36">MAKE IT PORTABLE to phones and smart devices</text:p>
+       <text:p text:style-name="P48">MAKE IT PORTABLE to phones and smart devices</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P36">Use consistent buttons <text:span text:style-name="T4">(Primary CTA style, If there is a secondary CTA make it different.)</text:span></text:p>
+       <text:p text:style-name="P48">Use consistent buttons <text:span text:style-name="T5">(Primary CTA style, If there is a secondary CTA make it different.)</text:span></text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P38">Make sure CTA is always easily accessible (can make it sticky, or always a short scroll away)</text:p>
+       <text:p text:style-name="P51">Make sure CTA is always easily accessible (can make it sticky, or always a short scroll away)</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P38">Make primary CTA stand out</text:p>
+       <text:p text:style-name="P51">Make primary CTA stand out</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P38">Put navigation in top right</text:p>
+       <text:p text:style-name="P51">Put navigation in top right</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P38">Keep navigation bar titles conventional</text:p>
+       <text:p text:style-name="P51">Keep navigation bar titles conventional</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P38">Again, White space is good!</text:p>
+       <text:p text:style-name="P51">Again, White space is good!</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P38">Dont use jargon, speak plainly</text:p>
+       <text:p text:style-name="P51">Dont use jargon, speak plainly</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P38">Own smallness – Make it clear there is a live person behind the websites</text:p>
+       <text:p text:style-name="P51">Own smallness – Make it clear there is a live person behind the websites</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P38">Include pictures of Julia, humanizes</text:p>
+       <text:p text:style-name="P51">Include pictures of Julia, humanizes</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P37">Launch ASAP, don’t seek perfection</text:p>
+       <text:p text:style-name="P49">Launch ASAP, don’t seek perfection</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P37">Keep navigation bar visible and have less than 7 options</text:p>
+       <text:p text:style-name="P49">Keep navigation bar visible and have less than 7 options</text:p>
       </text:list-item>
       <text:list-item>
-       <text:p text:style-name="P37">Design Mobile first</text:p>
+       <text:p text:style-name="P49">Design Mobile first</text:p>
        <text:list>
         <text:list-item>
-         <text:p text:style-name="P37">With mobile, probably want a menu button in the top right instead of a nav bar</text:p>
+         <text:p text:style-name="P49">With mobile, probably want a menu button in the top right instead of a nav bar</text:p>
          <text:list>
           <text:list-item>
-           <text:p text:style-name="P37">CTA very visible on menu</text:p>
+           <text:p text:style-name="P49">CTA very visible on menu</text:p>
           </text:list-item>
          </text:list>
         </text:list-item>
@@ -850,13 +1069,87 @@
      </text:list>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P37">Articles to read:</text:p>
+     <text:p text:style-name="P49">Articles to read:</text:p>
      <text:list>
       <text:list-item>
-       <text:p text:style-name="P37">On creating a mobile design first, that adapts to desktop</text:p>
+       <text:p text:style-name="P49">On creating a mobile design first, that adapts to desktop</text:p>
        <text:list>
         <text:list-item>
-         <text:p text:style-name="P37">https://www.oakharborwebdesigns.com/blog/articles/how-to-build-a-responsive-mobile-first-website-from-scratch.html#blog-post</text:p>
+         <text:p text:style-name="P49"><text:a xlink:type="simple" xlink:href="https://www.oakharborwebdesigns.com/blog/articles/how-to-build-a-responsive-mobile-first-website-from-scratch.html#blog-post" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://www.oakharborwebdesigns.com/blog/articles/how-to-build-a-responsive-mobile-first-website-from-scratch.html#blog-post</text:a></text:p>
+        </text:list-item>
+       </text:list>
+      </text:list-item>
+     </text:list>
+    </text:list-item>
+   </text:list>
+   <text:p text:style-name="P12"/>
+   <text:p text:style-name="P12"/>
+   <text:p text:style-name="P52">META TAGS:</text:p>
+   <text:list xml:id="list1445958897" text:style-name="L2">
+    <text:list-item>
+     <text:p text:style-name="P53">Meta titles:</text:p>
+     <text:list>
+      <text:list-item>
+       <text:p text:style-name="P34">Home<text:span text:style-name="T8">: </text:span><text:span text:style-name="T10">Saratoga Springs Wedding and Event Planner | Julia Rose</text:span></text:p>
+       <text:list>
+        <text:list-item>
+         <text:p text:style-name="P47">Julia Rose Event Planning Co. is a full service event planning company in Saratoga Springs, <text:span text:style-name="T12">NY. Click the Contact button to send me a message!</text:span></text:p>
+        </text:list-item>
+       </text:list>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P34">About<text:span text:style-name="T8">: About | Julia Rose Event Planning Co.</text:span></text:p>
+       <text:list>
+        <text:list-item>
+         <text:p text:style-name="P47">Learn more about Julia Rose Peregrim and how she began her journey as an event planner <text:span text:style-name="T12">and how she will help you organize your next event.</text:span></text:p>
+        </text:list-item>
+       </text:list>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P34">Weddings<text:span text:style-name="T8">: Wedding Planning </text:span><text:span text:style-name="T10">| Julia Rose Event Planning Co.</text:span></text:p>
+       <text:list>
+        <text:list-item>
+         <text:p text:style-name="P37"><text:span text:style-name="T8">Based in Saratoga Springs, Julia Rose Event Planning Co. is here to take the stress out of planning your dream wedding. Send me a message!</text:span></text:p>
+        </text:list-item>
+       </text:list>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P34">Social Events<text:span text:style-name="T8">: </text:span><text:span text:style-name="T10">Social Event Planning | Julia Rose Event Planning Co.</text:span></text:p>
+       <text:list>
+        <text:list-item>
+         <text:p text:style-name="P37"><text:span text:style-name="T8">Based in Saratoga Springs, NY, learn more about how Julia Rose Event Planning Co. can help you plan your next party or social event!</text:span></text:p>
+        </text:list-item>
+       </text:list>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P34">Corporate Events<text:span text:style-name="T8">: </text:span><text:span text:style-name="T10">Corporate Event Planning | Julia Rose Event Planning Co. </text:span></text:p>
+       <text:list>
+        <text:list-item>
+         <text:p text:style-name="P37"><text:span text:style-name="T8">Based in Saratoga Springs, NY, learn more about how Julia Rose Event Planning Co. can organize your next corporate event.</text:span></text:p>
+        </text:list-item>
+       </text:list>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P34">Gallery<text:span text:style-name="T8">: </text:span><text:span text:style-name="T10">Gallery | Julia Rose Event Planning Co.</text:span></text:p>
+       <text:list>
+        <text:list-item>
+         <text:p text:style-name="P36"><text:span text:style-name="T10">V</text:span><text:span text:style-name="T8">iew photos from previous events coordinated by Julia Rose Event Planning Co.</text:span></text:p>
+        </text:list-item>
+       </text:list>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P35">Testimonials<text:span text:style-name="T8">: </text:span><text:span text:style-name="T10">Testimonials | Julia Rose Event Planning Co.</text:span></text:p>
+       <text:list>
+        <text:list-item>
+         <text:p text:style-name="P36"><text:span text:style-name="T8">Read testimonials written by those who have used our services.</text:span></text:p>
+        </text:list-item>
+       </text:list>
+      </text:list-item>
+      <text:list-item>
+       <text:p text:style-name="P35">Contact<text:span text:style-name="T8">: </text:span><text:span text:style-name="T10">Contact | Julia Rose Event Planning Co.</text:span></text:p>
+       <text:list>
+        <text:list-item>
+         <text:p text:style-name="P36"><text:span text:style-name="T10">F</text:span><text:span text:style-name="T8">ill out a form and send a message to Julia Rose Event Planning Co.</text:span></text:p>
         </text:list-item>
        </text:list>
       </text:list-item>
@@ -864,6 +1157,17 @@
     </text:list-item>
    </text:list>
    <text:p text:style-name="P3"/>
+   <text:p text:style-name="P30"><text:soft-page-break/>Social Events Page:</text:p>
+   <text:list xml:id="list2997410202" text:style-name="L4">
+    <text:list-item>
+     <text:p text:style-name="P55"><text:span text:style-name="T3">What is a Social Event? Section</text:span></text:p>
+     <text:list>
+      <text:list-item>
+       <text:p text:style-name="P54"><text:span text:style-name="T1">list a bunch of social events, many more!</text:span></text:p>
+      </text:list-item>
+     </text:list>
+    </text:list-item>
+   </text:list>
   </office:text>
  </office:body>
 </office:document>

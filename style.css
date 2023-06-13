@@ -413,6 +413,10 @@ a {
   font-size: 28px;
 }
 
+p {
+  margin: 0;
+}
+
 button:not(.dropdown--hover, .btn) {
   font-size: 11px;
   font-weight: 600;
@@ -746,7 +750,7 @@ img:not(.logo-image) {
   flex-direction: column;
 }
 
-#footer__left div {
+#footer__left p {
   text-align: center;
   font-size: var(--big-font);
 }
@@ -1040,7 +1044,7 @@ img:not(.logo-image) {
     font-size: var(--biggest-font);
   }
 
-  #wedding-info--desktop div {
+  #wedding-info--desktop p {
     font-size: var(--big-font);
   }
   
@@ -1113,7 +1117,7 @@ img:not(.logo-image) {
     font-size: var(--biggest-font);
   }
 
-  #social-events__text div {
+  #social-events__text p {
     font-size: var(--big-font);
   }
 
@@ -1166,7 +1170,7 @@ img:not(.logo-image) {
   font-size: var(--bigger-font);
 }
 
-#corporate__text div {
+#corporate__text p {
   font-size: var(--big-font);
 }
 

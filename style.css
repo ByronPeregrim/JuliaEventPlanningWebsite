@@ -563,6 +563,7 @@ img:not(.logo-image) {
   height: 23rem;
   margin-right: 20px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+  
 }
 
 .open .menu--mobile {
@@ -573,6 +574,7 @@ img:not(.logo-image) {
   justify-content: flex-start;
   padding-top: 10px;
   z-index: 10;
+  transition: left 0.3s ease-in-out;
 }
 
 .menu--mobile .menu--mobile__selection {
@@ -582,7 +584,7 @@ img:not(.logo-image) {
   font-weight: 600;
 }
 
-.menu--mobile  li {
+.menu--mobile li {
   text-decoration: none;
   list-style: none;
 }

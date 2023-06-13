@@ -716,16 +716,23 @@ img:not(.logo-image) {
 
 /*Non-Homepage Header*/
 
+
 #banner--non-homepage {
-  height: 13rem;
+  height: 20rem;
+  background-position-y: 100px;
 }
 
 @media (min-width: 650px) {
-
   #banner__text--non-homepage {
     font-size: var(--bigger-font);
   }
+}
 
+@media (min-width: 900px) {
+  #banner--non-homepage {
+    height: 10rem;
+    background-image: none;
+  }
 }
 
 /* ~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~*/
@@ -793,11 +800,11 @@ img:not(.logo-image) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to bottom, whitesmoke, rgba(255, 255, 255, 0)), url(images/homepage-banner.webp);
+  background-image: linear-gradient(to bottom, whitesmoke, rgba(255, 255, 255, 0)), url(images/home-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-position-y: 250px;
+  background-position-y: 200px;
   box-shadow: 0 0 20px 20px whitesmoke inset;
 }
 
@@ -1424,7 +1431,7 @@ img:not(.logo-image) {
 /* Parts of code taken from https://github.com/sefyudem/Contact-Us-Form/blob/master/style.css */
 
 #banner--contact {
-  height: 13rem;
+  height: 12rem;
   box-shadow: 0 0 20px 20px whitesmoke inset;
 }
 
@@ -1440,7 +1447,7 @@ form {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 20px 20px;
+	padding: 40px 20px;
   
 }
 
@@ -1451,7 +1458,7 @@ form {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("images/STOCK-homepage-banner-background.jpg") no-repeat center;
+	background: url("images/contact.jpg") no-repeat center;
 	background-size: cover;
   background-position-y: 20%;
 	filter: blur(50px);
@@ -1469,7 +1476,7 @@ form {
 }
 
 .left{
-	background: url("images/STOCK-homepage-banner-background.jpg") no-repeat center;
+	background: url("images/contact.jpg") no-repeat center;
 	background-size: cover;
 	height: 100%;
 }

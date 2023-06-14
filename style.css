@@ -384,6 +384,7 @@ template {
   font-size: 16px;
   color: var(--charcoal);
   font-family: nunito;
+  border: 1px;
 }
 
 body {
@@ -415,6 +416,9 @@ a {
 
 p {
   margin: 0;
+  font-weight: 300;
+  letter-spacing: .02em;
+  line-height: 1.5em;
 }
 
 button:not(.dropdown--hover, .btn) {
@@ -467,6 +471,7 @@ img:not(.logo-image) {
 .photo-reel {
   box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1);
   position: relative;
+  border: solid 1px;
 }
 
 /* ~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~*/
@@ -498,6 +503,7 @@ img:not(.logo-image) {
   transform: scale(1.1);
   transition: .1s;
   padding: 6px 21px;
+  margin-left: -2px;
 }
 
 /* Sticky Header */
@@ -682,7 +688,7 @@ img:not(.logo-image) {
   .dropdown--hover {
     display: inline-block;
     border: none;
-    background: whitesmoke;
+    background: transparent;
     font-family: frunchy;
     font-size: 26px;
     font-weight: bold;
@@ -707,7 +713,7 @@ img:not(.logo-image) {
     padding: 10px;
     text-decoration: none;
     border: none;
-    border-top: solid 1px #e0e0e0;
+    border-top: solid #e0e0e0;
   }
 
   .dropdown__menu a:hover {
@@ -722,6 +728,7 @@ img:not(.logo-image) {
 #banner--non-homepage {
   height: 20rem;
   background-position-y: 100px;
+  background-image: linear-gradient(to bottom, whitesmoke, rgba(255, 255, 255, 0)), url(images/non-homepage-banner.jpg);
 }
 
 @media (min-width: 650px) {
@@ -732,8 +739,8 @@ img:not(.logo-image) {
 
 @media (min-width: 900px) {
   #banner--non-homepage {
-    height: 10rem;
-    background-image: none;
+    height: 20rem;
+    background-position-y: 0px;
   }
 }
 
@@ -783,6 +790,7 @@ img:not(.logo-image) {
 
 #copyright {
   font-size: 12px;
+  background-color: whitesmoke;
 }
 
 @media (min-width: 1000px) {
@@ -961,12 +969,10 @@ img:not(.logo-image) {
 }
 
 #wedding__top-right-photo {
-  border: solid 1px;
   grid-area: 1 / 4 / 6 / 8;
 }
 
 #wedding__bottom-left-photo {
-  border: solid 1px;
   grid-area: 4 / 1 / 8 / 6;
   z-index: 0;
 }
@@ -1084,10 +1090,6 @@ img:not(.logo-image) {
   grid-template-rows: repeat(21, auto);
 }
 
-#social-events__photos div {
-  border: solid 1px;
-}
-
 #social-events__text {
   display: none;
 }
@@ -1153,10 +1155,6 @@ img:not(.logo-image) {
   grid-template-rows: (50, 2%);
   padding-right: 1rem;
   padding-left: 1rem;
-}
-
-.corporate-photo {
-  border: solid 1px;
 }
 
 #corporate-photo-left {
@@ -1237,21 +1235,18 @@ img:not(.logo-image) {
 }
 
 #photo-1--mobile {
-  border: solid 1px;
   aspect-ratio: 1;
   width: 80%;
   margin-top: 5rem;
 }
 
 #photo-2--mobile {
-  border: solid 1px;
   aspect-ratio: 0.75;
   width: 60%;
   margin-top: 3rem;
 }
 
 #photo-3--mobile {
-  border: solid 1px;
   aspect-ratio: 2;
   width: 90%;
   margin-top: 3rem;
@@ -1297,7 +1292,6 @@ img:not(.logo-image) {
 
   .photo-reel {
     display: block;
-    border: solid 1px;
     width: 11%;
     aspect-ratio: 1;
   }
@@ -1332,12 +1326,12 @@ img:not(.logo-image) {
 
 #about__text {
   text-align: center;
+  margin-top: -10px;
 }
 
 #about__photos {
   width: 80%;
   aspect-ratio: 1;
-  border: solid 1px;
   margin: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -1387,44 +1381,33 @@ img:not(.logo-image) {
   #about__text {
     grid-area: 2 / 1 / 4 / 6;
     text-align: left;
-    margin-top: 1rem;
+    margin-top: 4rem;
   }
 
 }
 
 @media (min-width: 1000px) {
   #about__text {
-    grid-area: 1 / 1 / 4 / 6;
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 }
 
 @media (min-width: 1100px) {
-  #about h2 {
-    grid-area: 2 / 1 / 2 / 1;
-    margin-top: -1rem;
-  }
   #about__text {
-    grid-area: 3 / 1 / 4 / 6;
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 }
 
 @media (min-width: 1200px) {
   #about__text {
-    margin-top: -2rem;
+    margin-top: -3rem;
   }
 }
 
 @media (min-width: 1300px) {
-
-  #about h2 {
-    grid-area: 1 / 1 / 1 / 1;
-    margin-top: 1rem;
-  }
-
   #about__text {
     font-size: var(--big-font);
+    margin-top: 5rem;
   }
 }
 
@@ -1434,7 +1417,6 @@ img:not(.logo-image) {
 
 #banner--contact {
   height: 12rem;
-  box-shadow: 0 0 20px 20px whitesmoke inset;
 }
 
 form {
@@ -1611,4 +1593,148 @@ label {
   input[type='tel'] {
     font-size: 16px;
   }
+}
+
+
+/* SOCIAL EVENTS PAGE */
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(whitesmoke 0%, var(--mimi-pink) 20%, var(--mimi-pink) 80%, whitesmoke);
+}
+
+.social-content {
+  padding: 10px 5%;
+  max-width: 1200px;
+}
+
+.social-content div {
+  display: flex;
+}
+
+.social-content h2{
+  font-size: var(--biggest-font);
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#social-content__top-box {
+  flex-direction: column;
+}
+
+#social-content__top-box h3 {
+  font-size: var(--bigger-font);
+  font-family: frunchy;
+  margin-bottom: -15px;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#social-content__top-box p {
+  margin-bottom: 20px;
+}
+
+#social-content__middle-box {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#social-content__middle-box p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#social-content__middle-box ul {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  list-style: inside circle;
+  padding-inline-start: 0;
+  gap: 3px;
+}
+
+#social-content__middle-box ul li {
+  font-size: 18px;
+}
+
+#social-events__image-1 {
+  width: 98%;
+  aspect-ratio: 1.5;
+  border-radius: 5px;
+  align-self: center;
+  margin-top: 20px;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+#social-events__image-2 {
+  width: 90%;
+  aspect-ratio: 1;
+  border-radius: 5px;
+  align-self: center;
+  margin-top: 20px;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+#social-content__bottom-box {
+  flex-direction: column;
+  margin: 50px 0px;
+}
+
+#social-content__bottom-box p {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+#social-content__bottom-box .contact-button {
+  text-align: center;
+  width: auto;
+  align-self: center;
+  font-weight: bold;
+  margin: 15px 0 20px 0;
+  font-size: var(--big-font);
+  padding: 10px 30px;
+}
+
+#social-content__bottom-box .contact-button:hover {
+  margin-bottom: 20px;
+}
+
+@media (min-width:900px) {
+  #social-content__top-box p {
+    font-size: var(--big-font);
+  }
+
+  #social-content__middle-box p {
+    font-size: var(--big-font);
+  }
+
+  #social-content__middle-box ul li {
+    font-size: var(--big-font)
+  }
+
+  #social-content__top-box h3 {
+    font-size: var(--biggest-font);
+  }
+
+  #social-content__bottom-box .contact-button {
+    text-align: center;
+    width: auto;
+    align-self: center;
+    font-weight: bold;
+    margin: 15px 0 20px 0;
+    font-size: var(--bigger-font);
+    padding: 10px 40px;
+  }
+
+  #social-content__bottom-box p {
+    font-weight: 300;
+    font-size: var(--big-font);
+  }
+
+
 }

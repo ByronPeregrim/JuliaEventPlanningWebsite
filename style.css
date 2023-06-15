@@ -1012,7 +1012,7 @@ img:not(.logo-image) {
   }
     
   #wedding-info--desktop button {
-    margin-top: 1rem;
+    margin-top: 5px;
   }
 
   #wedding {
@@ -1066,6 +1066,7 @@ img:not(.logo-image) {
   #wedding-info--desktop button {
     justify-self: center;
     width: auto;
+    margin-top: 10px;
   }
 
   #wedding {

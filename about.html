@@ -22,18 +22,19 @@
 </head>
 <body>
     <header>
-        <div class="sticky-header">
+
+        <div id="sticky-header">
             <a href="index.html">
                 <img class="logo-image" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
             </a>
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <ul class="menu--mobile">
-                  <li class="menu--mobile__selection"><a href="index.html">Home</a></li>
-                  <li class="menu--mobile__selection"><a onclick="event.stopPropagation(); toggleServiceMenu()">Services ></a></li>
-                  <li id="menu--mobile__selection--services">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+                <ul id="mobile-menu">
+                  <li class="mobile-menu__selection"><a href="index.html">Home</a></li>
+                  <li class="mobile-menu__selection"><a onclick="event.stopPropagation(); toggleServiceMenu()">Services ></a></li>
+                  <li id="mobile-menu__selection--services">
                     <ul>
                         <li><a onclick="serviceMenuBack()" href="#">< Back</a></li>
                         <li><a href="weddings.html">Weddings</a></li>
@@ -41,18 +42,19 @@
                         <li><a href="corporate-events.html">Corporate Events</a></li>
                     </ul>
                   </li>
-                  <li class="menu--mobile__selection"><a class="selected-menu-item" href="about.html">About</a></li>
-                  <li id="menu--mobile__selection--contact" class="menu--mobile__selection"><a href="contact.html">Contact</a></li>
+                  <li class="mobile-menu__selection"><a class="selected-menu-item" href="about.html">About</a></li>
+                  <li id="mobile-menu__selection--contact" class="mobile-menu__selection"><a href="contact.html">Contact</a></li>
                 </ul>
             </div> 
         </div>
-        <div id="banner--non-homepage" class="banner about-banner">
-            <div class="menu--desktop">
-                <div class="menu--desktop__left">
+
+        <div class="banner" id="banner--non-homepage">
+            <div id="desktop-menu">
+                <div id="desktop-menu__left">
                     <a href="index.html">Home</a>
-                    <div class="dropdown">
-                        <button class="dropdown--hover">Services</button>
-                        <div class="dropdown__menu">
+                    <div id="dropdown">
+                        <button id="dropdown--hover">Services</button>
+                        <div id="dropdown__menu">
                             <a href="weddings.html">Weddings</a>
                             <a href="social-events.html">Social Events</a>
                             <a href="corporate-events.html">Corporate Events</a>
@@ -60,17 +62,18 @@
                     </div>
                 </div>
                 <img class="logo-image" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning" onclick="document.location='index.html'">
-                <div class="menu--desktop__right">
+                <div id="desktop-menu__right">
                     <a class="selected-menu-item" href="about.html">About</a>
                     <a class="contact-button" href="contact.html">Contact</a>
                 </div>
             </div>
             <h1 id="banner__text--non-homepage">Julia Rose Event Planning Co.</h1>
         </div>
+
     </header>
 
     <div id="about-wrapper">
-        <div id="about">
+        <div id="about-content">
             <h2>About</h2>
             <p id="about__text">&emsp;Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Urna nec tincidunt praesent semper feugiat.
                 Ipsum dolor sit amet consectetur. Augue eget arcu dictum varius duis. Mattis pellentesque id nibh tortor id aliquet lectus.<br><br> 

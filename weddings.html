@@ -22,18 +22,18 @@
 </head>
 <body>
     <header>
-        <div class="sticky-header">
+        <div id="sticky-header">
             <a href="index.html">
                 <img class="logo-image" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning">
             </a>
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <ul class="menu--mobile">
-                  <li class="menu--mobile__selection"><a href="index.html">Home</a></li>
-                  <li class="menu--mobile__selection"><a onclick="event.stopPropagation(); toggleServiceMenu()">Services ></a></li>
-                  <li id="menu--mobile__selection--services">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+                <ul id="mobile-menu">
+                  <li class="mobile-menu__selection"><a href="index.html">Home</a></li>
+                  <li class="mobile-menu__selection"><a onclick="event.stopPropagation(); toggleServiceMenu()">Services ></a></li>
+                  <li id="mobile-menu__selection--services">
                     <ul>
                         <li><a onclick="serviceMenuBack()" href="#">< Back</a></li>
                         <li><a class="selected-menu-item" href="weddings.html">Weddings</a></li>
@@ -41,26 +41,27 @@
                         <li><a href="corporate-events.html">Corporate Events</a></li>
                     </ul>
                   </li>
-                  <li class="menu--mobile__selection"><a href="about.html">About</a></li>
-                  <li id="menu--mobile__selection--contact" class="menu--mobile__selection"><a href="contact.html">Contact</a></li>
+                  <li class="mobile-menu__selection"><a href="about.html">About</a></li>
+                  <li id="mobile-menu__selection--contact" class="mobile-menu__selection"><a href="contact.html">Contact</a></li>
                 </ul>
             </div> 
         </div>
-        <div id="banner--non-homepage" class="banner">
-            <div class="menu--desktop">
-                <div class="menu--desktop__left">
+
+        <div class="banner" id="banner--non-homepage">
+            <div id="desktop-menu">
+                <div id="desktop-menu__left">
                     <a href="index.html">Home</a>
-                    <div class="dropdown">
-                        <button class="dropdown--hover">Services</button>
-                        <div class="dropdown__menu">
-                            <a href="weddings.html">Weddings</a>
+                    <div id="dropdown">
+                        <button id="dropdown--hover">Services</button>
+                        <div id="dropdown__menu">
+                            <a class="selected-menu-item" href="weddings.html">Weddings</a>
                             <a href="social-events.html">Social Events</a>
                             <a href="corporate-events.html">Corporate Events</a>
                         </div>
                     </div>
                 </div>
                 <img class="logo-image" src="images/STOCK-logo.png" alt="The logo for Julia Rose Event Planning" onclick="document.location='index.html'">
-                <div class="menu--desktop__right">
+                <div id="desktop-menu__right">
                     <a href="about.html">About</a>
                     <a class="contact-button" href="contact.html">Contact</a>
                 </div>
@@ -69,14 +70,14 @@
         </div>
     </header>
 
-    <div class="content-wrapper">
-        <div class="social-content">
-            <div id="social-content__top-box">
+    <div id="content-wrapper">
+        <div id="content">
+            <div id="content__top-box">
                 <h2>Weddings</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <div class="image" id="social-events__image-1">
+                <div class="image" id="top-box__image">
                     <img src="images/weddings/image-1.jpg" alt="a group of ladies at a bridal shower posing for a photo">
                 </div>
                 <p>
@@ -86,12 +87,12 @@
                     tempor incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
-            <div id="social-content__middle-box">
-                <div class="image" id="social-events__image-2">
+            <div id="content__middle-box">
+                <div class="image" id="middle-box__image">
                     <img src="images/weddings/image-2.jpg" alt="FILL THIS IN">
                 </div>
             </div>
-            <div id="social-content__bottom-box">
+            <div id="content__bottom-box">
                 <p style="text-align: center;">For more information, send me a message on my contact page!</p>
                 <a class="contact-button" href="contact.html">Contact Page</a>
             </div>

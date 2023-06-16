@@ -768,23 +768,24 @@ img:not(.logo-image) {
 
 #footer__left p {
   text-align: center;
-  font-size: var(--big-font);
+  font-size: 16px;
   font-weight: 600;
-  line-height: 1.75rem;
+  line-height: 1.25rem;
+  padding: 0 4px;
 }
 
 #footer__left .contact-button {
   margin-top: 10px;
   font-family: frunchy;
-  font-size: var(--big-font);
+  font-size: var(--font);
   text-align: center;
   font-weight: 600;
   text-decoration: none;
 }
 
 #footer__left .contact-button:hover {
-  transform: scale(1.1);
-  transition: .1s;
+  transform: scale(1);
+  padding: 5px 20px;
 }
 
 #footer__right ul {
@@ -792,9 +793,22 @@ img:not(.logo-image) {
   margin-left: -20%;
 }
 
+#footer__right ul li:hover {
+  transform: scale(1.1);
+  transition: .1s;
+}
+
 #copyright {
   font-size: 12px;
   background-color: whitesmoke;
+}
+
+@media (min-width: 500px) {
+
+  #footer__left .contact-button {
+    font-size: var(--big-font);
+  }
+
 }
 
 @media (min-width: 650px) {
@@ -803,7 +817,7 @@ img:not(.logo-image) {
   }
 
   #footer__left p {
-    font-size: var(--big-font);
+    font-size: 18px;
   }
 
 }
@@ -811,11 +825,6 @@ img:not(.logo-image) {
 @media (min-width: 1000px) {
   #footer__right ul li {
     font-size: 18px;
-  }
-
-  #footer__left .contact-button {
-    font-size: var(--bigger-font);
-    padding: 3px 20px;
   }
 }
 
@@ -1608,7 +1617,7 @@ label {
 }
 
 
-/* SOCIAL EVENTS PAGE */
+/* SERVICE PAGES */
 
 #content-wrapper {
   display: flex;
@@ -1707,13 +1716,13 @@ label {
   width: auto;
   align-self: center;
   font-weight: bold;
-  margin: 15px 0 20px 0;
+  margin: 15px 0 0 0;
   font-size: var(--big-font);
   padding: 10px 30px;
 }
 
 #content__bottom-box .contact-button:hover {
-  margin-bottom: 20px;
+  transform: scale(1);
 }
 
 @media (min-width:900px) {
